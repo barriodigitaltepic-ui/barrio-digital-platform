@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const app = document.getElementById("app");
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("negocio");
+  const categoria = params.get("categoria");
 
   try {
     let data = {
@@ -21,6 +22,15 @@ const respuesta = await fetch("data/negocios.json");
 data = await respuesta.json();
 
 }
+ if(categoria){
+
+  const negociosCategoria = data.negocios.filter(n => n.categoria === categoria);
+  const categoriaInfo = data.categorias.find(c => c.slug === categoria);
+
+  renderCategoria(categoriaInfo, negociosCategoria);
+  return;
+
+}   
 
     if (slug) {
       const negocio = data.negocios.find(n => n.slug === slug);
@@ -303,4 +313,83 @@ function generarTicket() {
   const ventana = window.open("", "_blank");
   ventana.document.write(contenido);
   ventana.print();
+}
+
+function renderCategoria(categoria, negocios){
+
+const app=document.getElementById("app");
+
+let html=`
+
+<section class="hero"
+style="
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1497366754035-f200968a6e72');
+background-size:cover;
+background-position:center;
+">
+
+<div>
+<h1>${categoria ? categoria.nombre : "Categoría"}</h1>
+<p>Negocios registrados en Barrio Digital Tepic</p>
+</div>
+
+</section>
+
+<section class="grid">
+`;
+
+if(negocios.length===0){
+
+html+=`
+<div class="card">
+<h2>Próximamente</h2>
+<p>Aún no hay negocios registrados en esta categoría.</p>
+<a href="./">
+<button style="background:#7928ca;">Volver al inicio</button>
+</a>
+</div>
+`;
+
+}else{
+
+negocios.forEach(n=>{
+
+html+=`
+<div class="card">
+
+<img src="${n.imagen}">
+
+<h2>${n.nombre}</h2>
+
+<p>${n.descripcion}</p>
+
+${n.direccion ? `<p><strong>📍 ${n.direccion}</strong></p>` : ""}
+
+<a href="${n.sitio}" target="_blank">
+<button style="background:${n.color || '#7928ca'};">
+Visitar Página
+</button>
+</a>
+
+<a href="https://wa.me/${n.whatsapp}" target="_blank">
+<button style="background:#25D366;">
+WhatsApp
+</button>
+</a>
+
+</div>
+`;
+
+});
+
+}
+
+html+=`
+</section>
+`;
+
+app.innerHTML=html;
+
 }
