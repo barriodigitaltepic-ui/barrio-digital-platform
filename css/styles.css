@@ -1,88 +1,53 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
+.carrito{
+position:fixed;
+right:-380px;
+top:0;
+width:360px;
+height:100%;
+background:#111;
+padding:25px;
+box-shadow:-5px 0 25px rgba(0,0,0,.5);
+transition:.4s;
+z-index:1000;
+overflow:auto;
 }
 
-body{
-background:#0f0f0f;
+.carrito.activo{
+right:0;
+}
+
+.item-carrito{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:12px;
+border-bottom:1px solid #333;
+padding-bottom:8px;
+}
+
+.item-carrito button{
+background:red;
 color:white;
+border:none;
+padding:4px 8px;
+border-radius:6px;
+cursor:pointer;
 }
 
-.hero{
-height:40vh;
+.boton-carrito{
+position:fixed;
+right:25px;
+bottom:25px;
+background:#ff0080;
+color:white;
+width:55px;
+height:55px;
+border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
-url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a');
-
-background-size:cover;
-background-position:center;
-}
-
-.hero h1{
-font-size:55px;
-margin-bottom:15px;
-}
-
-.hero p{
-opacity:.8;
-}
-
-.grid{
-padding:60px 8%;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.card{
-background:#1b1b1b;
-border-radius:20px;
-overflow:hidden;
-transition:.4s;
-box-shadow:0 0 20px rgba(0,0,0,.4);
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card h2{
-padding:20px 20px 10px;
-}
-
-.card p{
-padding:0 20px;
-opacity:.7;
-min-height:60px;
-}
-
-.card a{
-text-decoration:none;
-}
-
-.card button{
-margin:20px;
-padding:12px 25px;
-border:none;
-border-radius:30px;
-color:white;
-font-weight:600;
+font-size:25px;
 cursor:pointer;
-transition:.3s;
-}
-
-.card button:hover{
-opacity:.85;
+z-index:1001;
+box-shadow:0 0 20px rgba(255,0,128,.5);
 }
