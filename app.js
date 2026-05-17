@@ -38,7 +38,7 @@ function renderHome(negocios) {
  <section class="hero"
 style="
 background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.60)),
+linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.40)),
 url('https://images.unsplash.com/photo-1519501025264-65ba15a82390');
 
 background-size:cover;
