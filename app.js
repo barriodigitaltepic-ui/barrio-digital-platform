@@ -46,45 +46,67 @@ data = await respuesta.json();
   }
 });
 
-function renderHome(negocios) {
-  const app = document.getElementById("app");
+function renderHome(data){
 
-  let html = `
- <section class="hero"
+const app=document.getElementById("app");
+
+let html=`
+
+<section class="hero"
 style="
 background:
-linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.40)),
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.60)),
 url('https://images.unsplash.com/photo-1519501025264-65ba15a82390');
 
 background-size:cover;
 background-position:center;
 ">
-      <div>
-        <h1>Barrio Digital Platform</h1>
-        <p>Plataforma Escalable para Negocios Locales</p>
-      </div>
-    </section>
 
-    <section class="grid">
-  `;
+<div>
 
-  negocios.forEach(n => {
-    html += `
-      <div class="card">
-        <img src="${n.banner}">
-        <h2>${n.nombre}</h2>
-        <p>${n.descripcion}</p>
-        <a href="?negocio=${n.slug}">
-          <button style="background:${n.color}">
-            Ver Demo
-          </button>
-        </a>
-      </div>
-    `;
-  });
+<h1>Barrio Digital Tepic</h1>
 
-  html += `</section>`;
-  app.innerHTML = html;
+<p>
+Tu Directorio Digital de Negocios Locales
+</p>
+
+</div>
+
+</section>
+
+<section class="grid">
+`;
+
+data.categorias.forEach(c=>{
+
+html+=`
+
+<div class="card">
+
+<h2>${c.nombre}</h2>
+
+<p>
+Explora negocios registrados en esta categoría
+</p>
+
+<a href="?categoria=${c.slug}">
+
+<button style="background:#7928ca;">
+Ver Categoría
+</button>
+
+</a>
+
+</div>
+
+`;
+
+});
+
+html+=`</section>`;
+
+app.innerHTML=html;
+
 }
 
 function renderNegocio(negocio) {
