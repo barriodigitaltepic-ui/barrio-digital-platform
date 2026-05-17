@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin | Barrio Digital</title>
 
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+
+.admin{
+max-width:900px;
+margin:50px auto;
+padding:30px;
+}
+
+.admin h1{
+margin-bottom:30px;
+}
+
+.form{
+background:#151515;
+padding:25px;
+border-radius:20px;
+margin-bottom:30px;
+}
+
+.form input,
+.form textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+background:#222;
+color:white;
+}
+
+.form button{
+padding:14px 25px;
+border:none;
+border-radius:12px;
+background:#7928ca;
+color:white;
+cursor:pointer;
+font-weight:600;
+}
+
+.lista-negocios{
+display:grid;
+gap:20px;
+}
+
+.negocio-item{
+background:#181818;
+padding:20px;
+border-radius:15px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="admin">
+
+<h1>Panel Administrador</h1>
+
+<div class="form">
+
+<input type="text" id="nombre" placeholder="Nombre del negocio">
+
+<input type="text" id="slug" placeholder="Slug">
+
+<input type="text" id="descripcion" placeholder="Descripción">
+
+<input type="text" id="color" placeholder="Color HEX">
+
+<input type="text" id="whatsapp" placeholder="WhatsApp">
+
+<input type="text" id="banner" placeholder="URL Banner">
+
+<button onclick="guardarNegocio()">
+Guardar Negocio
+</button>
+
+</div>
+
+<div class="lista-negocios" id="listaNegocios"></div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
