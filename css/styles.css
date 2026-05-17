@@ -1,1 +1,36 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
+body{
+background:#0f0f0f;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+opacity:0.7;
+margin-bottom:30px;
+}
+
+button{
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#ff0080,#7928ca);
+color:white;
+cursor:pointer;
+font-size:16px;
+}
