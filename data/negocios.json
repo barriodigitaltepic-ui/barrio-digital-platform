@@ -3,42 +3,79 @@
     {
       "nombre":"Ferretería PRO",
       "slug":"ferreteria",
+      "tipo":"catalogo",
       "descripcion":"Herramientas, materiales y promociones.",
       "color":"#00ff99",
       "whatsapp":"5213113392436",
       "banner":"https://images.unsplash.com/photo-1581092335397-9583eb92d232",
       "productos":[
-        {
-          "nombre":"Taladro Inalámbrico",
-          "precio":1299,
-          "imagen":"https://images.unsplash.com/photo-1504148455328-c376907d081c"
-        },
-        {
-          "nombre":"Martillo Profesional",
-          "precio":180,
-          "imagen":"https://images.unsplash.com/photo-1586864387789-628af9feed72"
-        }
+        {"nombre":"Taladro Inalámbrico","precio":1299,"imagen":"https://images.unsplash.com/photo-1504148455328-c376907d081c"},
+        {"nombre":"Martillo Profesional","precio":180,"imagen":"https://images.unsplash.com/photo-1586864387789-628af9feed72"}
       ]
     },
-
     {
       "nombre":"Refaccionaria PRO",
       "slug":"refaccionaria",
+      "tipo":"catalogo",
       "descripcion":"Refacciones automotrices y promociones.",
       "color":"#00d4ff",
       "whatsapp":"5213113392436",
       "banner":"https://images.unsplash.com/photo-1503376780353-7e6692767b70",
       "productos":[
-        {
-          "nombre":"Filtro de Aceite",
-          "precio":120,
-          "imagen":"https://images.unsplash.com/photo-1486006920555-c77dcf18193c"
-        },
-        {
-          "nombre":"Pastillas de Freno",
-          "precio":650,
-          "imagen":"https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"
-        }
+        {"nombre":"Filtro de Aceite","precio":120,"imagen":"https://images.unsplash.com/photo-1486006920555-c77dcf18193c"},
+        {"nombre":"Pastillas de Freno","precio":650,"imagen":"https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"}
+      ]
+    },
+    {
+      "nombre":"Spa Five Stars",
+      "slug":"spa",
+      "tipo":"citas",
+      "descripcion":"Agenda servicios premium de belleza y spa.",
+      "color":"#d4af37",
+      "whatsapp":"5213113392436",
+      "banner":"https://images.unsplash.com/photo-1515377905703-c4788e51af15",
+      "productos":[
+        {"nombre":"Corte Signature","precio":600,"imagen":"https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"},
+        {"nombre":"Facial Diamante","precio":1500,"imagen":"https://images.unsplash.com/photo-1556228720-195a672e8a03"}
+      ]
+    },
+    {
+      "nombre":"Glam Nails Studio",
+      "slug":"unas",
+      "tipo":"citas",
+      "descripcion":"Aplicación de uñas, gelish y diseños premium.",
+      "color":"#ff4da6",
+      "whatsapp":"5213113392436",
+      "banner":"https://images.unsplash.com/photo-1604654894610-df63bc536371",
+      "productos":[
+        {"nombre":"Uñas Acrílicas","precio":700,"imagen":"https://images.unsplash.com/photo-1604654894610-df63bc536371"},
+        {"nombre":"Gelish","precio":450,"imagen":"https://images.unsplash.com/photo-1610992015732-2449b76344bc"}
+      ]
+    },
+    {
+      "nombre":"Boutique Elegance",
+      "slug":"accesorios-mujer",
+      "tipo":"catalogo",
+      "descripcion":"Accesorios para mujer con estilo premium.",
+      "color":"#ff69b4",
+      "whatsapp":"5213113392436",
+      "banner":"https://images.unsplash.com/photo-1529139574466-a303027c1d8b",
+      "productos":[
+        {"nombre":"Bolsa Luxury","precio":450,"imagen":"https://images.unsplash.com/photo-1590874103328-eac38a683ce7"},
+        {"nombre":"Collar Dorado Fino","precio":320,"imagen":"https://images.unsplash.com/photo-1515562141207-7a88fb7ce338"}
+      ]
+    },
+    {
+      "nombre":"Tech Zone",
+      "slug":"accesorios-celular",
+      "tipo":"catalogo",
+      "descripcion":"Accesorios para celular y tecnología.",
+      "color":"#7928ca",
+      "whatsapp":"5213113392436",
+      "banner":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+      "productos":[
+        {"nombre":"Funda Premium","precio":250,"imagen":"https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb"},
+        {"nombre":"Audífonos Bluetooth","precio":550,"imagen":"https://images.unsplash.com/photo-1505740420928-5e560c06d30e"}
       ]
     }
   ]
