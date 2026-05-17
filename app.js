@@ -4,8 +4,23 @@ document.addEventListener("DOMContentLoaded", async () => {
   const slug = params.get("negocio");
 
   try {
-    const respuesta = await fetch("data/negocios.json");
-    const data = await respuesta.json();
+    let data = {
+  negocios:[]
+};
+
+const local = localStorage.getItem("negocios");
+
+if(local){
+
+data.negocios = JSON.parse(local);
+
+}else{
+
+const respuesta = await fetch("data/negocios.json");
+
+data = await respuesta.json();
+
+}
 
     if (slug) {
       const negocio = data.negocios.find(n => n.slug === slug);
