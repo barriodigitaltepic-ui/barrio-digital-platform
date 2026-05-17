@@ -38,7 +38,7 @@ function renderHome(negocios) {
  <section class="hero"
 style="
 background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.88)),
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.60)),
 url('https://images.unsplash.com/photo-1519501025264-65ba15a82390');
 
 background-size:cover;
@@ -79,7 +79,7 @@ function renderNegocio(negocio) {
     <section class="hero" 
     style="
     background:
-    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.55)),
     url('${negocio.banner}');
     background-size:cover;
     background-position:center;
