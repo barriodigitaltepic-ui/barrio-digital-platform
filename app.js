@@ -68,14 +68,15 @@ function renderNegocio(negocio) {
   const app = document.getElementById("app");
 
   let html = `
-    <section class="hero" 
-      style="
-      background:
-      linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
-      url('${negocio.banner}');
-      background-size:cover;
-      background-position:center;
-      ">
+   <section class="hero"
+style="
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.88)),
+url('https://images.unsplash.com/photo-1519501025264-65ba15a82390');
+
+background-size:cover;
+background-position:center;
+">
       <div>
         <h1>${negocio.nombre}</h1>
         <p>${negocio.descripcion}</p>
