@@ -37,7 +37,7 @@ data = await respuesta.json();
       actualizarCarrito();
 
     } else {
-      renderHome(data.negocios);
+      renderHome(data);
     }
 
   } catch (error) {
