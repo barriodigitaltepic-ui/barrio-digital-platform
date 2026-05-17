@@ -35,7 +35,15 @@ function renderHome(negocios) {
   const app = document.getElementById("app");
 
   let html = `
-    <section class="hero">
+ <section class="hero"
+style="
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.88)),
+url('https://images.unsplash.com/photo-1519501025264-65ba15a82390');
+
+background-size:cover;
+background-position:center;
+">
       <div>
         <h1>Barrio Digital Platform</h1>
         <p>Plataforma Escalable para Negocios Locales</p>
