@@ -76,12 +76,11 @@ function renderNegocio(negocio) {
   const app = document.getElementById("app");
 
   let html = `
-   <section class="hero"
+<section class="hero" 
 style="
 background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.88)),
-url('https://images.unsplash.com/photo-1519501025264-65ba15a82390');
-
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+url('${negocio.banner}');
 background-size:cover;
 background-position:center;
 ">
