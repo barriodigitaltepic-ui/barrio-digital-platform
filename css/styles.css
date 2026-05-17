@@ -13,18 +13,6 @@ color:white;
 /* HERO PRINCIPAL */
 
 .hero{
-min-height:38vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:60px 20px;
-background-size:cover !important;
-background-position:center !important;
-position:relative;
-}
-
-.hero{
 min-height:45vh;
 display:flex;
 align-items:center;
