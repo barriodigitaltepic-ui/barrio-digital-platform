@@ -50,6 +50,54 @@ const app = document.getElementById("app");
 
 let html = `
 
+const destacados = data.negocios.filter(
+n => n.destacado === true
+);
+
+html += `
+<section style="padding:60px 8% 20px;">
+
+<h2 style="
+font-size:40px;
+margin-bottom:30px;
+text-align:center;
+">
+⭐ Negocios Destacados
+</h2>
+
+<div class="grid">
+`;
+
+destacados.forEach(n=>{
+
+html += `
+
+<div class="card">
+
+<img src="${n.imagen}">
+
+<h2>${n.nombre}</h2>
+
+<p>${n.descripcion}</p>
+
+<a href="${n.sitio}" target="_blank">
+
+<button style="background:${n.color || '#7928ca'};">
+Visitar Página
+</button>
+
+</a>
+
+</div>
+`;
+
+});
+
+html += `
+</div>
+</section>
+`;
+
 <section class="hero"
 style="
 background:
