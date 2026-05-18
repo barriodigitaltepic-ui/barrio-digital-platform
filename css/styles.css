@@ -203,7 +203,7 @@ transform:scale(1.03);
 width:100%;
 height:260px;
 object-fit:cover;
-object-position:center;
+object-position:top;
 display:block;
 transition:.4s;
 }
