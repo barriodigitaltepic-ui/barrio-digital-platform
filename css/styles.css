@@ -208,6 +208,45 @@ display:block;
 transition:.4s;
 }
 
+.card h2{
+font-size:30px;
+padding:26px 26px 10px;
+line-height:1.1;
+}
+
+.card p{
+font-size:16px;
+padding:0 26px;
+opacity:.88;
+line-height:1.6;
+}
+
+.card strong{
+display:block;
+margin-top:15px;
+color:#D4AF37;
+}
+
+.card a{
+text-decoration:none;
+}
+
+.card button{
+margin:18px 0 0 26px;
+padding:14px 28px;
+border:none;
+border-radius:40px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+font-size:15px;
+transition:.3s;
+}
+
+.card button:hover{
+transform:translateY(-2px);
+}
+
 
 /* CATEGORIAS PREMIUM */
 
