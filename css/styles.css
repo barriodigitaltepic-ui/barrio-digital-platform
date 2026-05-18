@@ -312,4 +312,30 @@ color:#D4AF37 !important;
 color:rgba(255,255,255,.55) !important;
 }
 
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+margin-top:50px;
+flex-wrap:wrap;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:42px;
+color:#D4AF37;
+margin-bottom:8px;
+}
+
+.stat p{
+font-size:15px;
+letter-spacing:1px;
+opacity:.8;
+}
+
 }
