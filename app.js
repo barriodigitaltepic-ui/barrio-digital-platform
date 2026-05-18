@@ -261,78 +261,39 @@ function renderHome(data){
 
 `;
 
- html += `
+html += `
 
-<footer class="footer-premium" style="background:rgba(0,0,0,.85);padding:70px 8% 35px;border-top:1px solid rgba(212,175,55,.25);">
+<footer class="footer-premium">
 
-<div class="footer-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:45px;max-width:1200px;margin:0 auto;"> 
+  <div class="footer-grid">
 
-    <div>
-
-      <h3>
-        🏙️ Barrio Digital Tepic
-      </h3>
-
-      <p>
-        Plataforma digital para negocios, marcas y servicios locales.
-      </p>
-
+    <div class="footer-brand">
+      <h3>🏙️ Barrio Digital Tepic</h3>
+      <p>Directorio digital para negocios, marcas y servicios locales en Tepic.</p>
     </div>
 
     <div>
-
-      <h4>
-        Contacto
-      </h4>
-
-      <p>
-        📱 WhatsApp: 311 339 2436
-      </p>
-
-      <p>
-        📍 Tepic, Nayarit
-      </p>
-
+      <h4>Contacto</h4>
+      <p>📱 WhatsApp: 311 339 2436</p>
+      <p>📍 Tepic, Nayarit</p>
     </div>
 
     <div>
-
-      <h4>
-        Negocios
-      </h4>
-
-      <a href="https://wa.me/523113392436" target="_blank">
-        Publicar mi negocio
-      </a>
-
-      <a href="./#gps">
-        GPS Vehicular
-      </a>
-
+      <h4>Negocios</h4>
+      <a href="https://wa.me/523113392436" target="_blank">Publicar mi negocio</a>
+      <a href="./#gps">GPS Vehicular</a>
     </div>
 
     <div>
-
-      <h4>
-        Síguenos
-      </h4>
-
-      <a href="#">
-        Facebook
-      </a>
-
-      <a href="#">
-        Instagram
-      </a>
-
+      <h4>Síguenos</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-
     © 2026 Barrio Digital Tepic — Todos los derechos reservados.
-
   </div>
 
 </footer>
