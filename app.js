@@ -131,9 +131,9 @@ function renderHome(data) {
   `;
 
   app.innerHTML = html;
+  window.dataGlobal = data; 
 }
-  window.dataGlobal = data;
-}
+
 
 function renderCategoria(data, categoria, negocios) {
   const app = document.getElementById("app");
