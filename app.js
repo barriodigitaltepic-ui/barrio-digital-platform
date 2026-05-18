@@ -30,14 +30,7 @@ const app = document.getElementById("app");
 const destacados = data.negocios.filter(n => n.destacado === true);
 
 let html = `
-<section class="hero"
-style="
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.60)),
-url('https://images.unsplash.com/photo-1519501025264-65ba15a82390');
-background-size:cover;
-background-position:center;
-">
+<section class="hero">
 <div>
 <h1>Barrio Digital Tepic</h1>
 <p>Tu Directorio Digital de Negocios Locales</p>
