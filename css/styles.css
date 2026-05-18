@@ -352,4 +352,50 @@ font-size:16px;
 padding:30px;
 }
 
+.gps-section{
+padding:70px 8% !important;
+}
+
+.gps-card-premium{
+padding:60px !important;
+border-radius:30px !important;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.82)),
+url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') !important;
+background-size:cover !important;
+background-position:center !important;
+border:1px solid rgba(255,255,255,.15) !important;
+box-shadow:0 25px 70px rgba(0,0,0,.55) !important;
+}
+
+.gps-info{
+max-width:760px !important;
+}
+
+.gps-info h2{
+font-size:48px !important;
+line-height:1.1 !important;
+margin-bottom:25px !important;
+color:white !important;
+}
+
+.gps-info p{
+font-size:20px !important;
+line-height:1.7 !important;
+opacity:.92 !important;
+margin-bottom:30px !important;
+color:white !important;
+}
+
+.gps-info button{
+background:#00c853 !important;
+color:white !important;
+padding:16px 35px !important;
+border:none !important;
+border-radius:40px !important;
+font-size:16px !important;
+font-weight:bold !important;
+cursor:pointer !important;
+}  
+
 }
