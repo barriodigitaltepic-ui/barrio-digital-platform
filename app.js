@@ -323,9 +323,9 @@ backdrop-filter:blur(18px);
         Síguenos
       </h4>
 
-      <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="#">
-        Facebook
-      </a>
+     <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="https://www.facebook.com/BARRIODIGITALTEPIC" target="_blank">
+  Facebook
+</a>
 
       <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="#">
         Instagram
