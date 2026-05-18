@@ -327,9 +327,9 @@ backdrop-filter:blur(18px);
   Facebook
 </a>
 
-      <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="#">
-        Instagram
-      </a>
+    <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="https://www.instagram.com/barriodigitaltepic/" target="_blank">
+  Instagram
+</a>
     </div>
 
   </div>
