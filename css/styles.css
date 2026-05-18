@@ -201,7 +201,7 @@ transform:scale(1.03);
 
 .card img{
 width:100%;
-height:260px;
+height:360px;
 object-fit:cover;
 object-position:center;
 display:block;
