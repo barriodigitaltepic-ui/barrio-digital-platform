@@ -34,7 +34,13 @@
       "nombre": "Belleza",
       "slug": "belleza",
       "imagen": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
-    }
+    },
+
+    {
+  "nombre": "GPS y Rastreo",
+  "slug": "gps-rastreo",
+  "imagen": "images/gps-banner.jpg"
+}
   ],
 
   "negocios": [
@@ -72,7 +78,18 @@
       "direccion": "Envíos a todo México",
       "color": "#D81B60",
       "destacado": true
-    }
+    },
 
+    {
+  "nombre": "ONNODO GPS",
+  "categoria": "gps-rastreo",
+  "descripcion": "Soluciones de rastreo satelital, monitoreo vehicular, control de flotillas y localización en tiempo real.",
+  "whatsapp": "5213113392436",
+  "sitio": "https://onnodo.com",
+  "imagen": "images/onnodo-banner.jpg",
+  "direccion": "Cobertura nacional",
+  "color": "#00C853",
+  "destacado": true
+    }
   ]
 }
