@@ -2,37 +2,43 @@
   "categorias": [
     {
       "nombre": "Estéticas",
-      "slug": "esteticas"
+      "slug": "esteticas",
       "imagen": "images/estetica-banner.jpg"
     },
-   {
-  "nombre": "Ferreterías",
-  "slug": "ferreterias",
-  "imagen": "images/ferreterias-banner.jpg"
-},
+
     {
-  "nombre": "Inmobiliarias",
-  "slug": "inmobiliarias",
-  "imagen": "images/inmobiliarias-banner.jpg"
-},
+      "nombre": "Ferreterías",
+      "slug": "ferreterias",
+      "imagen": "images/ferreterias-banner.jpg"
+    },
+
+    {
+      "nombre": "Inmobiliarias",
+      "slug": "inmobiliarias",
+      "imagen": "images/inmobiliarias-banner.jpg"
+    },
+
     {
       "nombre": "Uñas",
-      "slug": "unas"
+      "slug": "unas",
       "imagen": "images/unas-banner.jpg"
     },
+
     {
       "nombre": "Restaurantes",
-      "slug": "restaurantes"
+      "slug": "restaurantes",
       "imagen": "images/restaurantes-banner.jpg"
     },
-  {
-  "nombre": "Belleza",
-  "slug": "belleza",
-  "imagen": "images/belleza-banner.jpg"
-}
-    
+
+    {
+      "nombre": "Belleza",
+      "slug": "belleza",
+      "imagen": "images/belleza-banner.jpg"
+    }
   ],
+
   "negocios": [
+
     {
       "nombre": "Spa Five Stars",
       "categoria": "esteticas",
@@ -43,6 +49,7 @@
       "direccion": "Tepic, Nayarit",
       "color": "#D4AF37"
     },
+
     {
       "nombre": "Torrez & Maldonado",
       "categoria": "inmobiliarias",
@@ -54,17 +61,18 @@
       "color": "#D4AF37",
       "destacado": true
     },
+
     {
-  "nombre": "Mary Kay | Verónica Torrez",
-  "categoria": "belleza",
-  "descripcion": "Belleza, cuidado personal y productos Mary Kay con atención personalizada y asesoría de imagen.",
-  "whatsapp": "5213113418006",
-  "sitio": "https://barriodigitaltepic-ui.github.io/VERONICA-MARY-KAY/",
-  "imagen": "images/marykay-veronica.jpg",
-  "direccion": "Envíos a todo México",
-  "color": "#D81B60",
-  "destacado": true
-}
-    
+      "nombre": "Mary Kay | Verónica Torrez",
+      "categoria": "belleza",
+      "descripcion": "Belleza, cuidado personal y productos Mary Kay con atención personalizada y asesoría de imagen.",
+      "whatsapp": "5213113418006",
+      "sitio": "https://barriodigitaltepic-ui.github.io/VERONICA-MARY-KAY/",
+      "imagen": "images/marykay-veronica.jpg",
+      "direccion": "Envíos a todo México",
+      "color": "#D81B60",
+      "destacado": true
+    }
+
   ]
 }
