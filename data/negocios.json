@@ -3,22 +3,27 @@
     {
       "nombre": "Estéticas",
       "slug": "esteticas"
+      "imagen": "images/estetica-banner.jpg"
     },
+   {
+  "nombre": "Ferreterías",
+  "slug": "ferreterias",
+  "imagen": "images/ferreterias-banner.jpg"
+},
     {
-      "nombre": "Ferreterías",
-      "slug": "ferreterias"
-    },
-    {
-      "nombre": "Inmobiliarias",
-      "slug": "inmobiliarias"
-    },
+  "nombre": "Inmobiliarias",
+  "slug": "inmobiliarias",
+  "imagen": "images/inmobiliarias-banner.jpg"
+},
     {
       "nombre": "Uñas",
       "slug": "unas"
+      "imagen": "images/unas-banner.jpg"
     },
     {
       "nombre": "Restaurantes",
       "slug": "restaurantes"
+      "imagen": "images/restaurantes-banner.jpg"
     },
   {
   "nombre": "Belleza",
