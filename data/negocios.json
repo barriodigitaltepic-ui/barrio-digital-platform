@@ -41,6 +41,7 @@
       "imagen": "images/torrez1.jpg",
       "direccion": "Tepic, Nayarit",
       "color": "#D4AF37"
+      "destacado": true
     }
   ]
 }
