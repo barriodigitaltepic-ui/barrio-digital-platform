@@ -260,8 +260,8 @@ transition:.3s;
 color:#D4AF37 !important;
 }
 
-.nav-links a:hover{
-color:#D4AF37 !important;
+.nav-links a:visited{
+color:#ffffff !important;
 }
 
 .nav-links span{
