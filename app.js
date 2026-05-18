@@ -31,15 +31,21 @@ const destacados = data.negocios.filter(n => n.destacado === true);
 
 let html = `
 <section class="hero">
+
 <div>
+
 <h1>Barrio Digital Tepic</h1>
-<p>Tu Directorio Digital de Negocios Locales</p>
+
+<p>
+Tu Directorio Digital de Negocios Locales
+</p>
 
 <div class="buscador-box">
 <input type="text" id="buscador" placeholder="Buscar negocio, categoría o servicio..." onkeyup="buscarNegocios()">
 </div>
 
 </div>
+
 </section>
 `;
 
