@@ -220,43 +220,46 @@ function renderHome(data){
 
   html += `
 
-    <section class="section-block">
+<section class="section-block categorias-premium">
 
-      <h2 class="titulo-seccion">
-        Categorías
-      </h2>
+  <h2 class="titulo-seccion">
+    Explora Categorías
+  </h2>
 
-      <div class="grid">
+  <div class="categorias-grid">
 
-        ${data.categorias.map(c => `
+    ${data.categorias.map(c => `
 
-          <div class="card">
+      <a href="?categoria=${c.slug}" class="categoria-card">
 
-            <h2>
-              ${c.nombre}
-            </h2>
+        <div
+          class="categoria-bg"
+          style="background-image:url('${c.imagen}')"
+        ></div>
 
-            <p>
-              Explora negocios registrados en esta categoría.
-            </p>
+        <div class="categoria-overlay"></div>
 
-            <a href="?categoria=${c.slug}">
+        <div class="categoria-content">
 
-              <button style="background:#7928ca;">
-                Ver Categoría
-              </button>
+          <h3>
+            ${c.nombre}
+          </h3>
 
-            </a>
+          <button>
+            Explorar
+          </button>
 
-          </div>
+        </div>
 
-        `).join("")}
+      </a>
 
-      </div>
+    `).join("")}
 
-    </section>
+  </div>
 
-  `;
+</section>
+
+`;
 
   app.innerHTML = html;
 
