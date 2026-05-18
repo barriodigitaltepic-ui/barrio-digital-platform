@@ -73,20 +73,21 @@ Publicar Negocio
 
 </div>
 
-</nav>
+<div class="stats">
 
-<section class="hero">
+<div class="stat">
+<h2>+50</h2>
+<p>Negocios</p>
+</div>
 
-<div>
+<div class="stat">
+<h2>+15</h2>
+<p>Categorías</p>
+</div>
 
-<h1>Barrio Digital Tepic</h1>
-
-<p>
-Tu Directorio Digital de Negocios Locales
-</p>
-
-<div class="buscador-box">
-<input type="text" id="buscador" placeholder="Buscar negocio, categoría o servicio..." onkeyup="buscarNegocios()">
+<div class="stat">
+<h2>+2K</h2>
+<p>Visitas</p>
 </div>
 
 </div>
