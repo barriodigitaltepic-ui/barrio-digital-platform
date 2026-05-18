@@ -145,6 +145,7 @@ function renderCategoria(categoria, negocios) {
         </div>
       </div>
     </section>
+      `;
 
     <section class="grid" id="resultadosCategoria">
   `;
