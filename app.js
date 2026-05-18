@@ -1,61 +1,124 @@
 document.addEventListener("DOMContentLoaded", async () => {
+
   const app = document.getElementById("app");
   const params = new URLSearchParams(window.location.search);
   const categoria = params.get("categoria");
 
   try {
+
     const respuesta = await fetch("data/negocios.json");
     const data = await respuesta.json();
 
-    if (categoria) {
-      const negociosCategoria = data.negocios.filter(n => n.categoria === categoria);
-      const categoriaInfo = data.categorias.find(c => c.slug === categoria);
+    if(categoria){
+
+      const negociosCategoria = data.negocios.filter(
+        n => n.categoria === categoria
+      );
+
+      const categoriaInfo = data.categorias.find(
+        c => c.slug === categoria
+      );
+
       renderCategoria(categoriaInfo, negociosCategoria);
+
     } else {
+
       renderHome(data);
+
     }
 
-  } catch (error) {
+  } catch(error){
+
     console.error(error);
-    app.innerHTML = `<h1 style="text-align:center;padding:100px;">Error cargando plataforma</h1>`;
+
+    app.innerHTML = `
+      <h1 style="text-align:center;padding:100px;">
+        Error cargando plataforma
+      </h1>
+    `;
+
   }
+
 });
 
-function navbar() {
-  return `
-    <nav class="navbar">
-      <div class="logo">🏙️ Barrio Digital Tepic</div>
+function navbar(){
 
-      <div class="nav-links">
-        <a href="./">Inicio</a>
-        <span>|</span>
-        <a href="?categoria=esteticas">Estéticas</a>
-        <span>|</span>
-        <a href="?categoria=ferreterias">Ferreterías</a>
-        <span>|</span>
-        <a href="?categoria=inmobiliarias">Inmobiliarias</a>
-        <span>|</span>
-        <a href="./#gps">GPS</a>
-        <span>|</span>
-        <a href="https://wa.me/523113392436" target="_blank">Publicar Negocio</a>
-      </div>
-    </nav>
+  return `
+
+  <nav class="navbar">
+
+    <div class="logo">
+      🏙️ Barrio Digital Tepic
+    </div>
+
+    <div class="nav-links">
+
+      <a href="./">Inicio</a>
+
+      <span>|</span>
+
+      <a href="?categoria=esteticas">
+        Estéticas
+      </a>
+
+      <span>|</span>
+
+      <a href="?categoria=ferreterias">
+        Ferreterías
+      </a>
+
+      <span>|</span>
+
+      <a href="?categoria=inmobiliarias">
+        Inmobiliarias
+      </a>
+
+      <span>|</span>
+
+      <a href="./#gps">
+        GPS
+      </a>
+
+      <span>|</span>
+
+      <a href="https://wa.me/523113392436" target="_blank">
+        Publicar Negocio
+      </a>
+
+    </div>
+
+  </nav>
+
   `;
+
 }
 
-function renderHome(data) {
+function renderHome(data){
+
   const app = document.getElementById("app");
-  const destacados = data.negocios.filter(n => n.destacado === true);
+
+  const destacados = data.negocios.filter(
+    n => n.destacado === true
+  );
 
   let html = `
+
     ${navbar()}
 
     <section class="hero">
+
       <div class="hero-content">
-        <h1>Barrio Digital Tepic</h1>
-        <p>Tu Directorio Digital de Negocios Locales</p>
+
+        <h1>
+          Barrio Digital Tepic
+        </h1>
+
+        <p>
+          Tu Directorio Digital de Negocios Locales
+        </p>
 
         <div class="stats-panel">
+
           <div>
             <h2>${data.negocios.length}</h2>
             <p>Negocios asociados</p>
@@ -70,160 +133,368 @@ function renderHome(data) {
             <h2>${destacados.length}</h2>
             <p>Destacados</p>
           </div>
+
         </div>
 
         <div class="buscador-box">
-          <input type="text" id="buscador" placeholder="Buscar negocio, categoría o servicio..." onkeyup="buscarNegocios()">
+
+          <input
+            type="text"
+            id="buscador"
+            placeholder="Buscar negocio, categoría o servicio..."
+            onkeyup="buscarNegocios()"
+          >
+
         </div>
+
       </div>
+
     </section>
-     `;
 
-   <section id="gps" class="gps-section">
-  <div class="gps-card-premium">
-    <div class="gps-info">
-      <h2>📍 Localización Digital Vehicular</h2>
-      <p>GPS, rastreo, monitoreo y soluciones digitales para vehículos particulares, negocios y flotillas.</p>
+    <section id="gps" class="gps-section">
 
-      <a href="https://wa.me/523113392436" target="_blank">
-        <button>Solicitar Información</button>
-      </a>
-    </div>
-  </div>
-</section>
- `;
+      <div class="gps-card-premium">
 
-  if (destacados.length > 0) {
-    html += `
-      <section class="section-block">
-        <h2 class="titulo-seccion">⭐ Negocios Destacados</h2>
-        <div class="grid" id="resultadosBusqueda">
-          ${destacados.map(n => cardNegocio(n)).join("")}
+        <div class="gps-info">
+
+          <h2>
+            📍 Localización Digital Vehicular
+          </h2>
+
+          <p>
+            GPS, rastreo, monitoreo y soluciones digitales para vehículos particulares, negocios y flotillas.
+          </p>
+
+          <a href="https://wa.me/523113392436" target="_blank">
+
+            <button>
+              Solicitar Información
+            </button>
+
+          </a>
+
         </div>
-      </section>
-    `;
-  } else {
+
+      </div>
+
+    </section>
+
+  `;
+
+  if(destacados.length > 0){
+
     html += `
+
       <section class="section-block">
-        <div class="grid" id="resultadosBusqueda"></div>
+
+        <h2 class="titulo-seccion">
+          ⭐ Negocios Destacados
+        </h2>
+
+        <div class="grid" id="resultadosBusqueda">
+
+          ${destacados.map(
+            n => cardNegocio(n)
+          ).join("")}
+
+        </div>
+
       </section>
+
     `;
+
+  } else {
+
+    html += `
+
+      <section class="section-block">
+
+        <div class="grid" id="resultadosBusqueda">
+        </div>
+
+      </section>
+
+    `;
+
   }
 
   html += `
+
     <section class="section-block">
-      <h2 class="titulo-seccion">Categorías</h2>
+
+      <h2 class="titulo-seccion">
+        Categorías
+      </h2>
+
       <div class="grid">
+
         ${data.categorias.map(c => `
+
           <div class="card">
-            <h2>${c.nombre}</h2>
-            <p>Explora negocios registrados en esta categoría.</p>
+
+            <h2>
+              ${c.nombre}
+            </h2>
+
+            <p>
+              Explora negocios registrados en esta categoría.
+            </p>
+
             <a href="?categoria=${c.slug}">
-              <button style="background:#7928ca;">Ver Categoría</button>
+
+              <button style="background:#7928ca;">
+                Ver Categoría
+              </button>
+
             </a>
+
           </div>
+
         `).join("")}
+
       </div>
+
     </section>
+
   `;
 
   app.innerHTML = html;
+
   window.dataGlobal = data;
+
 }
 
-function renderCategoria(categoria, negocios) {
+function renderCategoria(categoria, negocios){
+
   const app = document.getElementById("app");
 
   let html = `
+
     ${navbar()}
 
     <section class="hero categoria-hero">
+
       <div class="hero-content">
-        <h1>${categoria ? categoria.nombre : "Categoría"}</h1>
-        <p>Negocios registrados en Barrio Digital Tepic</p>
+
+        <h1>
+          ${categoria ? categoria.nombre : "Categoría"}
+        </h1>
+
+        <p>
+          Negocios registrados en Barrio Digital Tepic
+        </p>
 
         <div class="buscador-box">
-          <input type="text" id="buscadorCategoria" placeholder="Buscar dentro de esta categoría..." onkeyup="buscarEnCategoria()">
+
+          <input
+            type="text"
+            id="buscadorCategoria"
+            placeholder="Buscar dentro de esta categoría..."
+            onkeyup="buscarEnCategoria()"
+          >
+
         </div>
+
       </div>
+
     </section>
-      `;
 
     <section class="grid" id="resultadosCategoria">
+
   `;
 
-  if (negocios.length === 0) {
+  if(negocios.length === 0){
+
     html += `
+
       <div class="card">
-        <h2>Próximamente</h2>
-        <p>Aún no hay negocios registrados en esta categoría.</p>
+
+        <h2>
+          Próximamente
+        </h2>
+
+        <p>
+          Aún no hay negocios registrados en esta categoría.
+        </p>
+
         <a href="./">
-          <button style="background:#7928ca;">Volver al inicio</button>
+
+          <button style="background:#7928ca;">
+            Volver al inicio
+          </button>
+
         </a>
+
       </div>
+
     `;
+
   } else {
-    html += negocios.map(n => cardNegocio(n)).join("");
+
+    html += negocios.map(
+      n => cardNegocio(n)
+    ).join("");
+
   }
 
-  html += `</section>`;
+  html += `
+    </section>
+  `;
 
   app.innerHTML = html;
+
   window.negociosCategoriaActual = negocios;
+
 }
 
-function cardNegocio(n) {
+function cardNegocio(n){
+
   return `
+
     <div class="card negocio-card">
+
       <img src="${n.imagen}">
-      <h2>${n.nombre}</h2>
-      <p>${n.descripcion}</p>
-      ${n.direccion ? `<p><strong>📍 ${n.direccion}</strong></p>` : ""}
+
+      <h2>
+        ${n.nombre}
+      </h2>
+
+      <p>
+        ${n.descripcion}
+      </p>
+
+      ${n.direccion ? `
+        <p>
+          <strong>
+            📍 ${n.direccion}
+          </strong>
+        </p>
+      ` : ""}
 
       <a href="${n.sitio}" target="_blank">
-        <button style="background:${n.color || '#7928ca'};">Visitar Página</button>
+
+        <button style="background:${n.color || '#7928ca'};">
+
+          Visitar Página
+
+        </button>
+
       </a>
 
       <a href="https://wa.me/${n.whatsapp}" target="_blank">
-        <button style="background:#25D366;">WhatsApp</button>
+
+        <button style="background:#25D366;">
+
+          WhatsApp
+
+        </button>
+
       </a>
+
     </div>
+
   `;
+
 }
 
-function buscarNegocios() {
-  const texto = document.getElementById("buscador").value.toLowerCase();
-  const contenedor = document.getElementById("resultadosBusqueda");
+function buscarNegocios(){
+
+  const texto = document
+    .getElementById("buscador")
+    .value
+    .toLowerCase();
+
+  const contenedor = document.getElementById(
+    "resultadosBusqueda"
+  );
+
   const data = window.dataGlobal;
 
-  if (texto.trim() === "") {
-    const destacados = data.negocios.filter(n => n.destacado === true);
-    contenedor.innerHTML = destacados.map(n => cardNegocio(n)).join("");
+  if(texto.trim() === ""){
+
+    const destacados = data.negocios.filter(
+      n => n.destacado === true
+    );
+
+    contenedor.innerHTML = destacados.map(
+      n => cardNegocio(n)
+    ).join("");
+
     return;
+
   }
 
   const resultados = data.negocios.filter(n =>
+
     n.nombre.toLowerCase().includes(texto) ||
+
     n.descripcion.toLowerCase().includes(texto) ||
+
     n.categoria.toLowerCase().includes(texto)
+
   );
 
   contenedor.innerHTML = resultados.length
-    ? resultados.map(n => cardNegocio(n)).join("")
-    : `<div class="card"><h2>Sin resultados</h2><p>No encontramos negocios relacionados.</p></div>`;
+
+    ? resultados.map(
+        n => cardNegocio(n)
+      ).join("")
+
+    : `
+      <div class="card">
+
+        <h2>
+          Sin resultados
+        </h2>
+
+        <p>
+          No encontramos negocios relacionados.
+        </p>
+
+      </div>
+    `;
+
 }
 
-function buscarEnCategoria() {
-  const texto = document.getElementById("buscadorCategoria").value.toLowerCase();
-  const contenedor = document.getElementById("resultadosCategoria");
+function buscarEnCategoria(){
+
+  const texto = document
+    .getElementById("buscadorCategoria")
+    .value
+    .toLowerCase();
+
+  const contenedor = document.getElementById(
+    "resultadosCategoria"
+  );
+
   const negocios = window.negociosCategoriaActual;
 
   const resultados = negocios.filter(n =>
+
     n.nombre.toLowerCase().includes(texto) ||
+
     n.descripcion.toLowerCase().includes(texto)
+
   );
 
   contenedor.innerHTML = resultados.length
-    ? resultados.map(n => cardNegocio(n)).join("")
-    : `<div class="card"><h2>Sin resultados</h2><p>No encontramos negocios relacionados.</p></div>`;
+
+    ? resultados.map(
+        n => cardNegocio(n)
+      ).join("")
+
+    : `
+      <div class="card">
+
+        <h2>
+          Sin resultados
+        </h2>
+
+        <p>
+          No encontramos negocios relacionados.
+        </p>
+
+      </div>
+    `;
+
 }
