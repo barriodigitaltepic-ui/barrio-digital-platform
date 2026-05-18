@@ -41,21 +41,31 @@ let html = `
 
 <a href="./">Inicio</a>
 
+<span>|</span>
+
 <a href="?categoria=esteticas">
 Estéticas
 </a>
+
+<span>|</span>
 
 <a href="?categoria=ferreterias">
 Ferreterías
 </a>
 
+<span>|</span>
+
 <a href="?categoria=inmobiliarias">
 Inmobiliarias
 </a>
 
+<span>|</span>
+
 <a href="#">
 GPS
 </a>
+
+<span>|</span>
 
 <a href="https://wa.me/523113392436" target="_blank">
 Publicar Negocio
