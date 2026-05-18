@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (categoria) {
       const negociosCategoria = data.negocios.filter(n => n.categoria === categoria);
       const categoriaInfo = data.categorias.find(c => c.slug === categoria);
-      renderCategoria(data, categoriaInfo, negociosCategoria);
+      renderCategoria(categoriaInfo, negociosCategoria);
     } else {
       renderHome(data);
     }
@@ -23,23 +23,23 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function navbar() {
   return `
-  <nav class="navbar">
-    <div class="logo">🏙️ Barrio Digital Tepic</div>
+    <nav class="navbar">
+      <div class="logo">🏙️ Barrio Digital Tepic</div>
 
-    <div class="nav-links">
-      <a href="./">Inicio</a>
-      <span>|</span>
-      <a href="?categoria=esteticas">Estéticas</a>
-      <span>|</span>
-      <a href="?categoria=ferreterias">Ferreterías</a>
-      <span>|</span>
-      <a href="?categoria=inmobiliarias">Inmobiliarias</a>
-      <span>|</span>
-      <a href="#gps">GPS</a>
-      <span>|</span>
-      <a href="https://wa.me/523113392436" target="_blank">Publicar Negocio</a>
-    </div>
-  </nav>
+      <div class="nav-links">
+        <a href="./">Inicio</a>
+        <span>|</span>
+        <a href="?categoria=esteticas">Estéticas</a>
+        <span>|</span>
+        <a href="?categoria=ferreterias">Ferreterías</a>
+        <span>|</span>
+        <a href="?categoria=inmobiliarias">Inmobiliarias</a>
+        <span>|</span>
+        <a href="./#gps">GPS</a>
+        <span>|</span>
+        <a href="https://wa.me/523113392436" target="_blank">Publicar Negocio</a>
+      </div>
+    </nav>
   `;
 }
 
@@ -131,13 +131,10 @@ function renderHome(data) {
   `;
 
   app.innerHTML = html;
-  window.dataGlobal = data; 
+  window.dataGlobal = data;
 }
 
-}
-
-
-function renderCategoria(data, categoria, negocios) {
+function renderCategoria(categoria, negocios) {
   const app = document.getElementById("app");
 
   let html = `
