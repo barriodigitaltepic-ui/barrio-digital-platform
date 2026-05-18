@@ -576,4 +576,19 @@ text-align:center;
 .footer-bottom{
 text-align:center;
 }
+/* CARDS INTERNAS PREMIUM */
+
+.negocio-card-interno img{
+width:100%;
+height:520px;
+object-fit:cover;
+object-position:center top;
+display:block;
+transition:.4s;
+}
+
+.negocio-card-interno{
+min-height:880px;
+}
+  
 }
