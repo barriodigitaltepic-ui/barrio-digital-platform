@@ -79,8 +79,8 @@
       "color": "#D81B60",
       "destacado": true
     },
-
-    {
+    
+ {
   "nombre": "ONNODO GPS",
   "categoria": "gps-rastreo",
   "descripcion": "Soluciones de rastreo satelital, monitoreo vehicular, control de flotillas y localización en tiempo real.",
@@ -89,7 +89,6 @@
   "imagen": "images/onnodo-banner.jpg",
   "direccion": "Cobertura nacional",
   "color": "#00C853"
-      
-    },
+}
   ]
 }
