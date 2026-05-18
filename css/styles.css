@@ -269,4 +269,31 @@ font-size:14px;
 padding-top:130px !important;
 }
 
+.nav-links{
+display:flex !important;
+align-items:center !important;
+gap:14px !important;
+flex-wrap:nowrap !important;
+}
+
+.nav-links a{
+color:#ffffff !important;
+text-decoration:none !important;
+font-size:16px !important;
+font-weight:500 !important;
+letter-spacing:.6px !important;
+white-space:nowrap !important;
+transition:.3s !important;
+}
+
+.nav-links span{
+display:inline-block !important;
+color:rgba(255,255,255,.45) !important;
+font-size:15px !important;
+}
+
+.nav-links a:hover{
+color:#D4AF37 !important;
+}
+
 }
