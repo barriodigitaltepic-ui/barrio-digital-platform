@@ -20,9 +20,10 @@
       "nombre": "Restaurantes",
       "slug": "restaurantes"
     },
-    {
+  {
   "nombre": "Belleza",
-  "slug": "belleza"
+  "slug": "belleza",
+  "imagen": "images/belleza-banner.jpg"
 }
     
   ],
