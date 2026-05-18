@@ -1,19 +1,46 @@
 {
-  "categorias":[
+  "categorias": [
     {
-      "nombre":"Estéticas",
-      "slug":"esteticas"
+      "nombre": "Estéticas",
+      "slug": "esteticas"
+    },
+    {
+      "nombre": "Ferreterías",
+      "slug": "ferreterias"
+    },
+    {
+      "nombre": "Inmobiliarias",
+      "slug": "inmobiliarias"
+    },
+    {
+      "nombre": "Uñas",
+      "slug": "unas"
+    },
+    {
+      "nombre": "Restaurantes",
+      "slug": "restaurantes"
     }
   ],
-
-  "negocios":[
+  "negocios": [
     {
-      "nombre":"Spa Five Stars",
-      "categoria":"esteticas",
-      "descripcion":"Spa premium",
-      "whatsapp":"5213113392436",
-      "sitio":"https://...",
-      "imagen":"..."
+      "nombre": "Spa Five Stars",
+      "categoria": "esteticas",
+      "descripcion": "Spa premium con servicios de belleza, cuidado personal y atención personalizada.",
+      "whatsapp": "5213113392436",
+      "sitio": "https://barriodigitaltepic-ui.github.io/barrio-digital-platform/",
+      "imagen": "https://images.unsplash.com/photo-1515377905703-c4788e51af15",
+      "direccion": "Tepic, Nayarit",
+      "color": "#D4AF37"
+    },
+    {
+      "nombre": "Torrez & Maldonado",
+      "categoria": "inmobiliarias",
+      "descripcion": "Firma inmobiliaria enfocada en inversión, comercialización y estrategias digitales.",
+      "whatsapp": "5213113392436",
+      "sitio": "https://ventasrodrigomaldonado-ux.github.io/Torrez-Maldonado-Web/",
+      "imagen": "https://images.unsplash.com/photo-1560518883-ce09059eeffa",
+      "direccion": "Tepic, Nayarit",
+      "color": "#D4AF37"
     }
   ]
 }
