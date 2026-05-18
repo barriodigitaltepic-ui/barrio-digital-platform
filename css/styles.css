@@ -171,27 +171,18 @@ gap:30px;
 .card{
 background:rgba(18,18,18,.72);
 backdrop-filter:blur(12px);
-
 border:1px solid rgba(255,255,255,.10);
-
 border-radius:28px;
-
 overflow:hidden;
-
 box-shadow:0 15px 45px rgba(0,0,0,.38);
-
 transition:.4s;
-
 display:flex;
 flex-direction:column;
 }
 
 .card:hover{
 transform:translateY(-10px);
-
-box-shadow:
-0 30px 70px rgba(0,0,0,.55);
-
+box-shadow:0 30px 70px rgba(0,0,0,.55);
 border:1px solid rgba(212,175,55,.25);
 }
 
@@ -247,7 +238,6 @@ transition:.3s;
 transform:translateY(-2px);
 }
 
-
 /* CATEGORIAS PREMIUM */
 
 .categorias-grid{
@@ -289,13 +279,7 @@ transform:scale(1.08);
 .categoria-overlay{
 position:absolute;
 inset:0;
-
-background:
-linear-gradient(
-to top,
-rgba(0,0,0,.88),
-rgba(0,0,0,.15)
-);
+background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.15));
 }
 
 .categoria-content{
@@ -379,136 +363,93 @@ transition:.3s;
 transform:translateY(-3px);
 }
 
-/* ANIMACION */
+/* CARDS INTERNAS PREMIUM */
 
-.negocio-card{
-animation:aparecer .3s ease;
-}
-
-@keyframes aparecer{
-from{
-opacity:0;
-transform:translateY(10px);
-}
-
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-.navbar{
-flex-direction:column;
-gap:12px;
-padding:15px;
-}
-
-.nav-links{
-justify-content:center;
-flex-wrap:wrap;
-gap:10px;
-}
-
-.hero{
-padding-top:190px;
-}
-
-.hero h1{
-font-size:36px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-.grid{
-padding:35px 20px;
-}
-
-.gps-info h2{
-font-size:34px;
-}
-
-.gps-info p{
-font-size:16px;
-}
-
-.gps-card-premium{
-padding:30px;
-}
-
-/* FOOTER PREMIUM */
-
-.footer-premium{
-margin-top:80px;
-padding:60px 8% 30px;
-
-background:
-rgba(0,0,0,.72);
-
-backdrop-filter:blur(14px);
-
-border-top:
-1px solid rgba(255,255,255,.10);
-}
-
-.footer-grid{
-display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(220px,1fr));
-
-gap:40px;
-}
-
-.footer-grid h3{
-font-size:28px;
-margin-bottom:20px;
-color:white;
-}
-
-.footer-grid h4{
-font-size:20px;
-margin-bottom:18px;
-color:#D4AF37;
-}
-
-.footer-grid p{
-opacity:.82;
-line-height:1.7;
-margin-bottom:10px;
-}
-
-.footer-grid a{
+.negocio-card-interno img{
+width:100%;
+height:520px;
+object-fit:cover;
+object-position:center top;
 display:block;
+transition:.4s;
+}
+
+.negocio-card-interno{
+min-height:880px;
+}
+
+/* PERFIL NEGOCIO PREMIUM */
+
+.negocio-hero{
+position:relative;
+min-height:100vh;
+display:flex;
+align-items:flex-end;
+padding:120px 8% 80px;
+overflow:hidden;
+}
+
+.negocio-banner{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.negocio-overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(to top,rgba(0,0,0,.92),rgba(0,0,0,.35));
+}
+
+.negocio-info{
+position:relative;
+z-index:2;
+max-width:800px;
+}
+
+.negocio-info h1{
+font-size:72px;
+line-height:1;
+margin-bottom:25px;
+}
+
+.negocio-info p{
+font-size:22px;
+line-height:1.8;
+opacity:.9;
+margin-bottom:35px;
+}
+
+.negocio-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-bottom:35px;
+}
+
+.negocio-buttons button{
+padding:16px 35px;
+border:none;
+border-radius:45px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
 color:white;
-text-decoration:none;
-margin-bottom:12px;
 transition:.3s;
-opacity:.85;
 }
 
-.footer-grid a:hover{
-color:#D4AF37;
-opacity:1;
+.negocio-buttons button:hover{
+transform:translateY(-3px);
 }
 
-.footer-bottom{
-margin-top:50px;
-padding-top:25px;
-border-top:
-1px solid rgba(255,255,255,.08);
-
-text-align:center;
-
-opacity:.65;
-font-size:14px;
+.negocio-direccion{
+font-size:18px;
+opacity:.82;
 }
 
-/* FOOTER PREMIUM FINAL */
+/* FOOTER */
 
 .footer-premium{
 margin-top:90px;
@@ -567,7 +508,79 @@ font-size:14px;
 opacity:.65;
 }
 
+/* ANIMACION */
+
+.negocio-card{
+animation:aparecer .3s ease;
+}
+
+@keyframes aparecer{
+from{
+opacity:0;
+transform:translateY(10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* RESPONSIVE */
+
 @media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:12px;
+padding:15px;
+}
+
+.nav-links{
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.hero{
+padding-top:190px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.grid{
+padding:35px 20px;
+}
+
+.card img{
+height:300px;
+}
+
+.negocio-card-interno img{
+height:360px;
+}
+
+.negocio-card-interno{
+min-height:auto;
+}
+
+.gps-info h2{
+font-size:34px;
+}
+
+.gps-info p{
+font-size:16px;
+}
+
+.gps-card-premium{
+padding:30px;
+}
+
 .footer-grid{
 grid-template-columns:1fr;
 text-align:center;
@@ -576,19 +589,17 @@ text-align:center;
 .footer-bottom{
 text-align:center;
 }
-/* CARDS INTERNAS PREMIUM */
 
-.negocio-card-interno img{
-width:100%;
-height:520px;
-object-fit:cover;
-object-position:center top;
-display:block;
-transition:.4s;
+.negocio-info h1{
+font-size:42px;
 }
 
-.negocio-card-interno{
-min-height:880px;
+.negocio-info p{
+font-size:17px;
 }
-  
+
+.negocio-hero{
+padding:140px 25px 60px;
+}
+
 }
