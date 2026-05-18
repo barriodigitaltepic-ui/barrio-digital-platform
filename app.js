@@ -30,6 +30,41 @@ const app = document.getElementById("app");
 const destacados = data.negocios.filter(n => n.destacado === true);
 
 let html = `
+
+<nav class="navbar">
+
+<div class="logo">
+🏙️ Barrio Digital Tepic
+</div>
+
+<div class="nav-links">
+
+<a href="./">Inicio</a>
+
+<a href="?categoria=esteticas">
+Estéticas
+</a>
+
+<a href="?categoria=ferreterias">
+Ferreterías
+</a>
+
+<a href="?categoria=inmobiliarias">
+Inmobiliarias
+</a>
+
+<a href="#">
+GPS
+</a>
+
+<a href="https://wa.me/523113392436" target="_blank">
+Publicar Negocio
+</a>
+
+</div>
+
+</nav>
+
 <section class="hero">
 
 <div>
