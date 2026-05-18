@@ -263,9 +263,9 @@ function renderHome(data){
 
  html += `
 
-<footer class="footer-premium">
+<footer class="footer-premium" style="background:rgba(0,0,0,.85);padding:70px 8% 35px;border-top:1px solid rgba(212,175,55,.25);">
 
-  <div class="footer-grid">
+<div class="footer-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:45px;max-width:1200px;margin:0 auto;"> 
 
     <div>
 
