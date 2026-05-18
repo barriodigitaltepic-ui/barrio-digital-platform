@@ -19,7 +19,12 @@
     {
       "nombre": "Restaurantes",
       "slug": "restaurantes"
-    }
+    },
+    {
+  "nombre": "Belleza",
+  "slug": "belleza"
+}
+    
   ],
   "negocios": [
     {
@@ -42,6 +47,18 @@
       "direccion": "Tepic, Nayarit",
       "color": "#D4AF37",
       "destacado": true
-    }
+    },
+    {
+  "nombre": "Mary Kay | Verónica Torrez",
+  "categoria": "belleza",
+  "descripcion": "Belleza, cuidado personal y productos Mary Kay con atención personalizada y asesoría de imagen.",
+  "whatsapp": "5213113418006",
+  "sitio": "https://barriodigitaltepic-ui.github.io/VERONICA-MARY-KAY/",
+  "imagen": "images/marykay-veronica.jpg",
+  "direccion": "Envíos a todo México",
+  "color": "#D81B60",
+  "destacado": true
+}
+    
   ]
 }
