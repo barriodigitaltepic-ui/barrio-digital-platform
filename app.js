@@ -49,6 +49,94 @@ Tu Directorio Digital de Negocios Locales
 </section>
 `;
 
+html += `
+
+<section style="
+padding:70px 8%;
+">
+
+<div class="card"
+style="
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:40px;
+padding:40px;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+
+background-size:cover;
+background-position:center;
+border:1px solid rgba(255,255,255,.12);
+">
+
+<div style="flex:1;min-width:280px;">
+
+<h2 style="
+font-size:42px;
+margin-bottom:20px;
+">
+📍 Localización Digital Vehicular
+</h2>
+
+<p style="
+font-size:18px;
+line-height:1.7;
+opacity:.85;
+margin-bottom:25px;
+">
+
+GPS, monitoreo, recuperación y rastreo vehicular para flotillas, negocios y uso personal.
+
+</p>
+
+<a href="https://wa.me/523113392436" target="_blank">
+
+<button style="
+background:#00c853;
+padding:15px 30px;
+border:none;
+border-radius:40px;
+font-size:16px;
+font-weight:bold;
+color:white;
+cursor:pointer;
+">
+
+Solicitar Información
+
+</button>
+
+</a>
+
+</div>
+
+<div style="
+flex:1;
+min-width:280px;
+text-align:center;
+">
+
+<img 
+src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c"
+style="
+width:100%;
+max-width:500px;
+border-radius:25px;
+object-fit:cover;
+box-shadow:0 20px 50px rgba(0,0,0,.5);
+"
+>
+
+</div>
+
+</div>
+
+</section>
+
+`;  
+
 if(destacados.length > 0){
 html += `
 <section style="padding:60px 8% 20px;">
