@@ -443,7 +443,7 @@ function cardNegocio(n){
 
   return `
 
-    <div class="card negocio-card">
+    <div class="card negocio-card negocio-card-interno">
 
       <img src="${n.imagen}">
 
