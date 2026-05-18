@@ -208,34 +208,6 @@ display:block;
 transition:.4s;
 }
 
-.card h2{
-font-size:24px;
-padding:22px 22px 8px;
-}
-
-.card p{
-font-size:15px;
-padding:0 22px;
-opacity:.82;
-line-height:1.5;
-min-height:55px;
-}
-
-.card button{
-margin:22px;
-padding:13px 25px;
-border:none;
-border-radius:30px;
-color:white;
-font-weight:bold;
-cursor:pointer;
-font-size:15px;
-transition:.3s;
-}
-
-.card button:hover{
-transform:scale(1.04);
-}
 
 /* CATEGORIAS PREMIUM */
 
