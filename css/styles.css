@@ -296,4 +296,20 @@ font-size:15px !important;
 color:#D4AF37 !important;
 }
 
+.navbar .nav-links a{
+color:#ffffff !important;
+}
+
+.navbar .nav-links a:visited{
+color:#ffffff !important;
+}
+
+.navbar .nav-links a:hover{
+color:#D4AF37 !important;
+}
+
+.navbar .nav-links span{
+color:rgba(255,255,255,.55) !important;
+}
+
 }
