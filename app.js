@@ -77,6 +77,7 @@ function renderHome(data) {
         </div>
       </div>
     </section>
+     `;
 
    <section id="gps" class="gps-section">
   <div class="gps-card-premium">
@@ -90,6 +91,7 @@ function renderHome(data) {
     </div>
   </div>
 </section>
+ `;
 
   if (destacados.length > 0) {
     html += `
