@@ -28,7 +28,7 @@
       "descripcion": "Spa premium con servicios de belleza, cuidado personal y atención personalizada.",
       "whatsapp": "5213113392436",
       "sitio": "https://barriodigitaltepic-ui.github.io/barrio-digital-platform/",
-     "imagen": "images/torrez-portada.jpg",
+      "imagen": "https://images.unsplash.com/photo-1515377905703-c4788e51af15",
       "direccion": "Tepic, Nayarit",
       "color": "#D4AF37"
     },
@@ -38,7 +38,7 @@
       "descripcion": "Firma inmobiliaria enfocada en inversión, comercialización y estrategias digitales.",
       "whatsapp": "5213113392436",
       "sitio": "https://ventasrodrigomaldonado-ux.github.io/Torrez-Maldonado-Web/",
-      "imagen": "images/torrez1.jpg"",
+      "imagen": "images/torrez1.jpg",
       "direccion": "Tepic, Nayarit",
       "color": "#D4AF37"
     }
