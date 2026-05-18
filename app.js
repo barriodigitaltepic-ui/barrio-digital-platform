@@ -261,6 +261,84 @@ function renderHome(data){
 
 `;
 
+ html += `
+
+<footer class="footer-premium">
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h3>
+        🏙️ Barrio Digital Tepic
+      </h3>
+
+      <p>
+        Plataforma digital para negocios, marcas y servicios locales.
+      </p>
+
+    </div>
+
+    <div>
+
+      <h4>
+        Contacto
+      </h4>
+
+      <p>
+        📱 WhatsApp: 311 339 2436
+      </p>
+
+      <p>
+        📍 Tepic, Nayarit
+      </p>
+
+    </div>
+
+    <div>
+
+      <h4>
+        Negocios
+      </h4>
+
+      <a href="https://wa.me/523113392436" target="_blank">
+        Publicar mi negocio
+      </a>
+
+      <a href="./#gps">
+        GPS Vehicular
+      </a>
+
+    </div>
+
+    <div>
+
+      <h4>
+        Síguenos
+      </h4>
+
+      <a href="#">
+        Facebook
+      </a>
+
+      <a href="#">
+        Instagram
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    © 2026 Barrio Digital Tepic — Todos los derechos reservados.
+
+  </div>
+
+</footer>
+
+`; 
+
   app.innerHTML = html;
 
   window.dataGlobal = data;
