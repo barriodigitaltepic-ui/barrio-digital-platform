@@ -263,42 +263,92 @@ function renderHome(data){
 
 html += `
 
-<footer class="footer-premium">
+<footer style="
+margin-top:90px;
+padding:70px 8% 35px;
+background:rgba(0,0,0,.88);
+border-top:1px solid rgba(212,175,55,.25);
+backdrop-filter:blur(18px);
+">
 
-  <div class="footer-grid">
+  <div style="
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:50px;
+  align-items:start;
+  ">
 
-    <div class="footer-brand">
-      <h3>🏙️ Barrio Digital Tepic</h3>
-      <p>Directorio digital para negocios, marcas y servicios locales en Tepic.</p>
+    <div>
+      <h3 style="font-size:28px;margin-bottom:15px;color:white;">
+        🏙️ Barrio Digital Tepic
+      </h3>
+
+      <p style="font-size:15px;line-height:1.7;opacity:.82;">
+        Directorio digital para negocios, marcas y servicios locales en Tepic.
+      </p>
     </div>
 
     <div>
-      <h4>Contacto</h4>
-      <p>📱 WhatsApp: 311 339 2436</p>
-      <p>📍 Tepic, Nayarit</p>
+      <h4 style="font-size:20px;margin-bottom:18px;color:#D4AF37;">
+        Contacto
+      </h4>
+
+      <p style="font-size:15px;line-height:1.7;opacity:.82;">
+        📱 WhatsApp: 311 339 2436
+      </p>
+
+      <p style="font-size:15px;line-height:1.7;opacity:.82;">
+        📍 Tepic, Nayarit
+      </p>
     </div>
 
     <div>
-      <h4>Negocios</h4>
-      <a href="https://wa.me/523113392436" target="_blank">Publicar mi negocio</a>
-      <a href="./#gps">GPS Vehicular</a>
+      <h4 style="font-size:20px;margin-bottom:18px;color:#D4AF37;">
+        Negocios
+      </h4>
+
+      <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="https://wa.me/523113392436" target="_blank">
+        Publicar mi negocio
+      </a>
+
+      <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="./#gps">
+        GPS Vehicular
+      </a>
     </div>
 
     <div>
-      <h4>Síguenos</h4>
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
+      <h4 style="font-size:20px;margin-bottom:18px;color:#D4AF37;">
+        Síguenos
+      </h4>
+
+      <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="#">
+        Facebook
+      </a>
+
+      <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="#">
+        Instagram
+      </a>
     </div>
 
   </div>
 
-  <div class="footer-bottom">
+  <div style="
+  max-width:1200px;
+  margin:45px auto 0;
+  padding-top:25px;
+  border-top:1px solid rgba(255,255,255,.10);
+  text-align:center;
+  font-size:14px;
+  opacity:.65;
+  ">
     © 2026 Barrio Digital Tepic — Todos los derechos reservados.
   </div>
 
 </footer>
 
-`; 
+`;
 
   app.innerHTML = html;
 
