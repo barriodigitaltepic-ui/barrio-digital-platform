@@ -78,23 +78,18 @@ function renderHome(data) {
       </div>
     </section>
 
-    <section id="gps" class="gps-section">
-      <div class="gps-card-premium">
-        <div class="gps-info">
-          <h2>📍 Localización Digital Vehicular</h2>
-          <p>GPS, rastreo, monitoreo y soluciones digitales para vehículos particulares, negocios y flotillas.</p>
+   <section id="gps" class="gps-section">
+  <div class="gps-card-premium">
+    <div class="gps-info">
+      <h2>📍 Localización Digital Vehicular</h2>
+      <p>GPS, rastreo, monitoreo y soluciones digitales para vehículos particulares, negocios y flotillas.</p>
 
-          <a href="https://wa.me/523113392436" target="_blank">
-            <button>Solicitar Información</button>
-          </a>
-        </div>
-
-        <div class="gps-image">
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
-        </div>
-      </div>
-    </section>
-  `;
+      <a href="https://wa.me/523113392436" target="_blank">
+        <button>Solicitar Información</button>
+      </a>
+    </div>
+  </div>
+</section>
 
   if (destacados.length > 0) {
     html += `
