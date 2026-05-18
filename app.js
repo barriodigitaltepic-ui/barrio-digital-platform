@@ -3,29 +3,38 @@ document.addEventListener("DOMContentLoaded", async () => {
   const app = document.getElementById("app");
   const params = new URLSearchParams(window.location.search);
   const categoria = params.get("categoria");
+  const negocio = params.get("negocio");
 
   try {
 
     const respuesta = await fetch("data/negocios.json");
-    const data = await respuesta.json();
+    const data = await respuesta.json(); 
 
-    if(categoria){
+   if(negocio){
 
-      const negociosCategoria = data.negocios.filter(
-        n => n.categoria === categoria
-      );
+  const negocioInfo = data.negocios.find(
+    n => n.nombre === negocio
+  );
 
-      const categoriaInfo = data.categorias.find(
-        c => c.slug === categoria
-      );
+  renderNegocio(negocioInfo);
 
-      renderCategoria(categoriaInfo, negociosCategoria);
+} else if(categoria){
 
-    } else {
+  const negociosCategoria = data.negocios.filter(
+    n => n.categoria === categoria
+  );
 
-      renderHome(data);
+  const categoriaInfo = data.categorias.find(
+    c => c.slug === categoria
+  );
 
-    }
+  renderCategoria(categoriaInfo, negociosCategoria);
+
+} else {
+
+  renderHome(data);
+
+}
 
   } catch(error){
 
@@ -439,6 +448,68 @@ function renderCategoria(categoria, negocios){
 
 }
 
+function renderNegocio(n){
+
+  const app = document.getElementById("app");
+
+  app.innerHTML = `
+
+    ${navbar()}
+
+    <section class="negocio-hero">
+
+      <img src="${n.imagen}" class="negocio-banner">
+
+      <div class="negocio-overlay"></div>
+
+      <div class="negocio-info">
+
+        <h1>
+          ${n.nombre}
+        </h1>
+
+        <p>
+          ${n.descripcion}
+        </p>
+
+        <div class="negocio-buttons">
+
+          <a href="${n.sitio}" target="_blank">
+
+            <button style="background:${n.color || '#7928ca'};">
+
+              Sitio Web
+
+            </button>
+
+          </a>
+
+          <a href="https://wa.me/${n.whatsapp}" target="_blank">
+
+            <button style="background:#25D366;">
+
+              WhatsApp
+
+            </button>
+
+          </a>
+
+        </div>
+
+        ${n.direccion ? `
+          <div class="negocio-direccion">
+            📍 ${n.direccion}
+          </div>
+        ` : ""}
+
+      </div>
+
+    </section>
+
+  `;
+
+}
+
 function cardNegocio(n){
 
   return `
@@ -463,7 +534,7 @@ function cardNegocio(n){
         </p>
       ` : ""}
 
-      <a href="${n.sitio}" target="_blank">
+     <a href="?negocio=${encodeURIComponent(n.nombre)}">
 
         <button style="background:${n.color || '#7928ca'};">
 
