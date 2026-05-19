@@ -384,11 +384,15 @@ function cardNegocio(n){
 
 function buscarNegocios(){
 
-  const texto = document.getElementById("buscador").value.toLowerCase();
+  const input = document.getElementById("buscador");
   const contenedor = document.getElementById("resultadosBusqueda");
   const data = window.dataGlobal;
 
-  if(texto.trim() === ""){
+  if(!input || !contenedor || !data) return;
+
+  const texto = input.value.toLowerCase().trim();
+
+  if(texto === ""){
 
     const destacados = data.negocios.filter(
       n => n.destacado === true
@@ -399,25 +403,28 @@ function buscarNegocios(){
     ).join("");
 
     return;
-
   }
 
   const resultados = data.negocios.filter(n =>
     n.nombre.toLowerCase().includes(texto) ||
     n.descripcion.toLowerCase().includes(texto) ||
-    n.categoria.toLowerCase().includes(texto)
+    n.categoria.toLowerCase().includes(texto) ||
+    (n.direccion && n.direccion.toLowerCase().includes(texto))
   );
 
   contenedor.innerHTML = resultados.length
-
     ? resultados.map(n => cardNegocio(n)).join("")
-
     : `
       <div class="card">
         <h2>Sin resultados</h2>
-        <p>No encontramos negocios relacionados.</p>
+        <p>No encontramos negocios relacionados con tu búsqueda.</p>
       </div>
     `;
+
+  contenedor.scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
 
 }
 
