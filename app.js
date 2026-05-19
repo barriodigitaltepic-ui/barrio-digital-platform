@@ -354,6 +354,13 @@ function cardNegocio(n){
 
   return `
     <div class="card negocio-card negocio-card-interno">
+
+    ${n.badge ? `
+<div class="badge badge-${n.badge}">
+  ${obtenerTextoBadge(n.badge)}
+</div>
+` : ""}
+
       <img src="${n.imagen}">
 
       <h2>${n.nombre}</h2>
@@ -469,4 +476,27 @@ function registrarClick(tipo, negocio){
 
 function obtenerVisitas(){
   return Number(localStorage.getItem("visitasBarrioDigital")) || 0;
+}
+
+function obtenerTextoBadge(tipo){
+
+  switch(tipo){
+
+    case "premium":
+      return "💎 PREMIUM";
+
+    case "verificado":
+      return "✔️ VERIFICADO";
+
+    case "destacado":
+      return "⭐ DESTACADO";
+
+    case "nuevo":
+      return "🆕 NUEVO";
+
+    default:
+      return "⭐ NEGOCIO";
+
+  }
+
 }
