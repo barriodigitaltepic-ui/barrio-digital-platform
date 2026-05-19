@@ -221,9 +221,9 @@ function renderHome(data){
 
   app.innerHTML = html;
   window.dataGlobal = data;
+  setTimeout(() => iniciarMapa(data.negocios), 300);
+  
 }
-
-setTimeout(() => iniciarMapa(data.negocios), 300);
 
 function renderCategoria(categoria, negocios){
   const app = document.getElementById("app");
