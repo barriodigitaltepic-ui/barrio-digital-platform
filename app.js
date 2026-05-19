@@ -8,15 +8,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   const negocio = params.get("negocio");
 
   try {
-
     const respuesta = await fetch("data/negocios.json");
     const data = await respuesta.json();
 
     if(negocio){
-
-      const negocioInfo = data.negocios.find(
-        n => n.nombre === negocio
-      );
+      const negocioInfo = data.negocios.find(n => n.nombre === negocio);
 
       if(!negocioInfo){
         app.innerHTML = `<h1 style="text-align:center;padding:100px;">Negocio no encontrado</h1>`;
@@ -26,63 +22,45 @@ document.addEventListener("DOMContentLoaded", async () => {
       renderNegocio(negocioInfo);
 
     } else if(categoria){
-
-      const negociosCategoria = data.negocios.filter(
-        n => n.categoria === categoria
-      );
-
-      const categoriaInfo = data.categorias.find(
-        c => c.slug === categoria
-      );
+      const negociosCategoria = data.negocios.filter(n => n.categoria === categoria);
+      const categoriaInfo = data.categorias.find(c => c.slug === categoria);
 
       renderCategoria(categoriaInfo, negociosCategoria);
 
     } else {
-
       renderHome(data);
-
     }
 
   } catch(error){
-
     console.error(error);
-
-    app.innerHTML = `
-      <h1 style="text-align:center;padding:100px;">
-        Error cargando plataforma
-      </h1>
-    `;
-
+    app.innerHTML = `<h1 style="text-align:center;padding:100px;">Error cargando plataforma</h1>`;
   }
 
 });
 
 function navbar(){
-
   return `
-  <nav class="navbar">
-    <div class="logo">🏙️ Barrio Digital Tepic</div>
+    <nav class="navbar">
+      <div class="logo">🏙️ Barrio Digital Tepic</div>
 
-    <div class="nav-links">
-      <a href="./">Inicio</a>
-      <span>|</span>
-      <a href="?categoria=esteticas">Estéticas</a>
-      <span>|</span>
-      <a href="?categoria=ferreterias">Ferreterías</a>
-      <span>|</span>
-      <a href="?categoria=inmobiliarias">Inmobiliarias</a>
-      <span>|</span>
-      <a href="./#gps">GPS</a>
-      <span>|</span>
-      <a href="https://wa.me/523113392436" target="_blank">Publicar Negocio</a>
-    </div>
-  </nav>
+      <div class="nav-links">
+        <a href="./">Inicio</a>
+        <span>|</span>
+        <a href="?categoria=esteticas">Estéticas</a>
+        <span>|</span>
+        <a href="?categoria=ferreterias">Ferreterías</a>
+        <span>|</span>
+        <a href="?categoria=inmobiliarias">Inmobiliarias</a>
+        <span>|</span>
+        <a href="./#gps">GPS</a>
+        <span>|</span>
+        <a href="https://wa.me/523113392436" target="_blank">Publicar Negocio</a>
+      </div>
+    </nav>
   `;
-
 }
 
 function renderHome(data){
-
   const app = document.getElementById("app");
   const destacados = data.negocios.filter(n => n.destacado === true);
 
@@ -117,17 +95,6 @@ function renderHome(data){
         </div>
 
         <div class="buscador-box">
-        <div class="hero-cta">
-
-  <a href="https://wa.me/523113392436?text=Hola,%20quiero%20anunciar%20mi%20negocio%20en%20Barrio%20Digital" target="_blank">
-
-    <button>
-      🚀 Anuncia tu negocio
-    </button>
-
-  </a>
-
-</div>
           <input
             type="text"
             id="buscador"
@@ -135,6 +102,13 @@ function renderHome(data){
             onkeyup="buscarNegocios()"
           >
         </div>
+
+        <div class="hero-cta">
+          <a href="https://wa.me/523113392436?text=Hola,%20quiero%20anunciar%20mi%20negocio%20en%20Barrio%20Digital" target="_blank">
+            <button>🚀 Anuncia tu negocio</button>
+          </a>
+        </div>
+
       </div>
     </section>
 
@@ -153,7 +127,6 @@ function renderHome(data){
   `;
 
   if(destacados.length > 0){
-
     html += `
       <section class="section-block">
         <h2 class="titulo-seccion">⭐ Negocios Destacados</h2>
@@ -163,15 +136,12 @@ function renderHome(data){
         </div>
       </section>
     `;
-
   } else {
-
     html += `
       <section class="section-block">
         <div class="grid" id="resultadosBusqueda"></div>
       </section>
     `;
-
   }
 
   html += `
@@ -195,28 +165,11 @@ function renderHome(data){
   `;
 
   html += `
-    <footer style="
-    margin-top:90px;
-    padding:70px 8% 35px;
-    background:rgba(0,0,0,.88);
-    border-top:1px solid rgba(212,175,55,.25);
-    backdrop-filter:blur(18px);
-    ">
-
-      <div style="
-      max-width:1200px;
-      margin:0 auto;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-      gap:50px;
-      align-items:start;
-      ">
-
+    <footer style="margin-top:90px;padding:70px 8% 35px;background:rgba(0,0,0,.88);border-top:1px solid rgba(212,175,55,.25);backdrop-filter:blur(18px);">
+      <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:50px;align-items:start;">
         <div>
           <h3 style="font-size:28px;margin-bottom:15px;color:white;">🏙️ Barrio Digital Tepic</h3>
-          <p style="font-size:15px;line-height:1.7;opacity:.82;">
-            Plataforma digital de negocios, inmobiliarias, GPS, belleza y servicios locales en Tepic, Nayarit.
-          </p>
+          <p style="font-size:15px;line-height:1.7;opacity:.82;">Plataforma digital de negocios, inmobiliarias, GPS, belleza y servicios locales en Tepic, Nayarit.</p>
         </div>
 
         <div>
@@ -236,31 +189,19 @@ function renderHome(data){
           <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="https://www.facebook.com/BARRIODIGITALTEPIC" target="_blank">Facebook</a>
           <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="https://www.instagram.com/barriodigitaltepic/" target="_blank">Instagram</a>
         </div>
-
       </div>
 
-      <div style="
-      max-width:1200px;
-      margin:45px auto 0;
-      padding-top:25px;
-      border-top:1px solid rgba(255,255,255,.10);
-      text-align:center;
-      font-size:14px;
-      opacity:.65;
-      ">
+      <div style="max-width:1200px;margin:45px auto 0;padding-top:25px;border-top:1px solid rgba(255,255,255,.10);text-align:center;font-size:14px;opacity:.65;">
         © 2026 Barrio Digital Tepic — Todos los derechos reservados.
       </div>
-
     </footer>
   `;
 
   app.innerHTML = html;
   window.dataGlobal = data;
-
 }
 
 function renderCategoria(categoria, negocios){
-
   const app = document.getElementById("app");
 
   let html = `
@@ -286,7 +227,6 @@ function renderCategoria(categoria, negocios){
   `;
 
   if(negocios.length === 0){
-
     html += `
       <div class="card">
         <h2>Próximamente</h2>
@@ -297,22 +237,17 @@ function renderCategoria(categoria, negocios){
         </a>
       </div>
     `;
-
   } else {
-
     html += negocios.map(n => cardNegocio(n)).join("");
-
   }
 
   html += `</section>`;
 
   app.innerHTML = html;
   window.negociosCategoriaActual = negocios;
-
 }
 
 function renderNegocio(n){
-
   const app = document.getElementById("app");
 
   app.innerHTML = `
@@ -320,12 +255,10 @@ function renderNegocio(n){
 
     <section class="negocio-hero">
       <img src="${n.imagen}" class="negocio-banner">
-
       <div class="negocio-overlay"></div>
 
       <div class="negocio-info">
         <h1>${n.nombre}</h1>
-
         <p>${n.descripcion}</p>
 
         <div class="negocio-buttons">
@@ -338,11 +271,7 @@ function renderNegocio(n){
           </a>
         </div>
 
-        ${n.direccion ? `
-          <div class="negocio-direccion">
-            📍 ${n.direccion}
-          </div>
-        ` : ""}
+        ${n.direccion ? `<div class="negocio-direccion">📍 ${n.direccion}</div>` : ""}
       </div>
     </section>
 
@@ -351,57 +280,41 @@ function renderNegocio(n){
         <h2>Galería</h2>
 
         <div class="galeria-grid">
-          ${n.galeria.map(img => `
-            <img src="${img}">
-          `).join("")}
+          ${n.galeria.map(img => `<img src="${img}">`).join("")}
         </div>
       </section>
     ` : ""}
   `;
-
 }
 
 function cardNegocio(n){
-
   return `
     <div class="card negocio-card negocio-card-interno">
 
-    ${n.badge ? `
-<div class="badge badge-${n.badge}">
-  ${obtenerTextoBadge(n.badge)}
-</div>
-` : ""}
-
-      <img src="${n.imagen}">
-
-      <h2>${n.nombre}</h2>
-
-      <p>${n.descripcion}</p>
-
-      ${n.direccion ? `
-        <p>
-          <strong>📍 ${n.direccion}</strong>
-        </p>
+      ${n.badge ? `
+        <div class="badge badge-${n.badge}">
+          ${obtenerTextoBadge(n.badge)}
+        </div>
       ` : ""}
 
+      <img src="${n.imagen}">
+      <h2>${n.nombre}</h2>
+      <p>${n.descripcion}</p>
+
+      ${n.direccion ? `<p><strong>📍 ${n.direccion}</strong></p>` : ""}
+
       <a href="?negocio=${encodeURIComponent(n.nombre)}">
-        <button style="background:${n.color || '#7928ca'};">
-          Visitar Página
-        </button>
+        <button style="background:${n.color || '#7928ca'};">Visitar Página</button>
       </a>
 
       <a href="https://wa.me/${n.whatsapp}" target="_blank" onclick="registrarClick('whatsapp','${n.nombre}')">
-        <button style="background:#25D366;">
-          WhatsApp
-        </button>
+        <button style="background:#25D366;">WhatsApp</button>
       </a>
     </div>
   `;
-
 }
 
 function buscarNegocios(){
-
   const input = document.getElementById("buscador");
   const contenedor = document.getElementById("resultadosBusqueda");
   const data = window.dataGlobal;
@@ -411,15 +324,8 @@ function buscarNegocios(){
   const texto = input.value.toLowerCase().trim();
 
   if(texto === ""){
-
-    const destacados = data.negocios.filter(
-      n => n.destacado === true
-    );
-
-    contenedor.innerHTML = destacados.map(
-      n => cardNegocio(n)
-    ).join("");
-
+    const destacados = data.negocios.filter(n => n.destacado === true);
+    contenedor.innerHTML = destacados.map(n => cardNegocio(n)).join("");
     return;
   }
 
@@ -443,11 +349,9 @@ function buscarNegocios(){
     behavior:"smooth",
     block:"start"
   });
-
 }
 
 function buscarEnCategoria(){
-
   const texto = document.getElementById("buscadorCategoria").value.toLowerCase();
   const contenedor = document.getElementById("resultadosCategoria");
   const negocios = window.negociosCategoriaActual;
@@ -458,16 +362,13 @@ function buscarEnCategoria(){
   );
 
   contenedor.innerHTML = resultados.length
-
     ? resultados.map(n => cardNegocio(n)).join("")
-
     : `
       <div class="card">
         <h2>Sin resultados</h2>
         <p>No encontramos negocios relacionados.</p>
       </div>
     `;
-
 }
 
 /* ANALYTICS LOCAL */
@@ -490,24 +391,16 @@ function obtenerVisitas(){
 }
 
 function obtenerTextoBadge(tipo){
-
   switch(tipo){
-
     case "premium":
       return "💎 PREMIUM";
-
     case "verificado":
       return "✔️ VERIFICADO";
-
     case "destacado":
       return "⭐ DESTACADO";
-
     case "nuevo":
       return "🆕 NUEVO";
-
     default:
       return "⭐ NEGOCIO";
-
   }
-
 }
