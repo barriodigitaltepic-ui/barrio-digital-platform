@@ -117,6 +117,17 @@ function renderHome(data){
         </div>
 
         <div class="buscador-box">
+        <div class="hero-cta">
+
+  <a href="https://wa.me/523113392436?text=Hola,%20quiero%20anunciar%20mi%20negocio%20en%20Barrio%20Digital" target="_blank">
+
+    <button>
+      🚀 Anuncia tu negocio
+    </button>
+
+  </a>
+
+</div>
           <input
             type="text"
             id="buscador"
