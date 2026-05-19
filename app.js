@@ -455,13 +455,24 @@ function pintarMarcadores(negocios){
     .forEach(n => {
       const marker = L.marker([n.lat, n.lng]).addTo(mapaBarrio);
 
+marker.bindTooltip(
+  n.nombre,
+  {
+    permanent:true,
+    direction:"right",
+    offset:[12,0],
+    className:"mapa-tooltip"
+  }
+);
+
       marker.bindPopup(`
         <strong>${n.nombre}</strong><br>
         ${n.descripcion}<br><br>
         <a href="?negocio=${encodeURIComponent(n.nombre)}">Ver perfil</a>
       `);
 
-      marcadoresMapa.push(marker);
+      marcadoresMapa.push(marker);      
+
     });
 }
 
