@@ -56,10 +56,6 @@ white-space:nowrap;
 transition:.3s;
 }
 
-.nav-links a:visited{
-color:#ffffff !important;
-}
-
 .nav-links a:hover{
 color:#D4AF37 !important;
 }
@@ -159,7 +155,7 @@ margin-bottom:30px;
 text-align:center;
 }
 
-/* GRID Y CARDS */
+/* GRID */
 
 .grid{
 padding:50px 7%;
@@ -167,6 +163,8 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 }
+
+/* CARDS */
 
 .card{
 background:rgba(18,18,18,.72);
@@ -363,7 +361,7 @@ transition:.3s;
 transform:translateY(-3px);
 }
 
-/* CARDS INTERNAS PREMIUM */
+/* CARDS INTERNAS */
 
 .negocio-card-interno img{
 width:100%;
@@ -378,7 +376,7 @@ transition:.4s;
 min-height:880px;
 }
 
-/* PERFIL NEGOCIO PREMIUM */
+/* PERFIL NEGOCIO */
 
 .negocio-hero{
 position:relative;
@@ -447,6 +445,43 @@ transform:translateY(-3px);
 .negocio-direccion{
 font-size:18px;
 opacity:.82;
+}
+
+/* GALERIA PREMIUM */
+
+.galeria-premium{
+padding:70px 6%;
+background:rgba(0,0,0,.45);
+}
+
+.galeria-premium h2{
+font-size:38px;
+margin-bottom:30px;
+text-align:center;
+color:#D4AF37;
+}
+
+.galeria-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+gap:28px;
+}
+
+.galeria-grid img{
+width:100%;
+height:300px;
+object-fit:cover;
+object-position:center;
+display:block;
+border-radius:24px;
+border:1px solid rgba(255,255,255,.12);
+box-shadow:0 18px 45px rgba(0,0,0,.45);
+transition:.35s;
+}
+
+.galeria-grid img:hover{
+transform:translateY(-6px);
+border:1px solid rgba(212,175,55,.35);
 }
 
 /* FOOTER */
@@ -601,53 +636,6 @@ font-size:17px;
 .negocio-hero{
 padding:140px 25px 60px;
 }
-
-/* GALERIA PREMIUM */
-
-.galeria-premium{
-padding:70px 6%;
-background:rgba(0,0,0,.45);
-}
-
-.galeria-premium h2{
-font-size:38px;
-margin-bottom:30px;
-text-align:center;
-color:#D4AF37;
-}
-
-.galeria-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
-gap:28px;
-}
-
-.galeria-grid img{
-width:100%;
-height:300px;
-object-fit:cover;
-object-position:center;
-display:block;
-
-border-radius:24px;
-
-border:
-1px solid rgba(255,255,255,.12);
-
-box-shadow:
-0 18px 45px rgba(0,0,0,.45);
-
-transition:.35s;
-}
-
-.galeria-grid img:hover{
-transform:translateY(-6px);
-
-border:
-1px solid rgba(212,175,55,.35);
-}
-
-@media(max-width:768px){
 
 .galeria-grid{
 grid-template-columns:1fr;
