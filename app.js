@@ -506,6 +506,20 @@ function renderNegocio(n){
 
     </section>
 
+  ${n.galeria ? `
+<section class="galeria-premium">
+
+  <h2>Galería</h2>
+
+  <div class="galeria-grid">
+    ${n.galeria.map(img => `
+      <img src="${img}">
+    `).join("")}
+  </div>
+
+</section>
+` : ""}  
+
   `;
 
 }
