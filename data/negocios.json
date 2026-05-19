@@ -53,6 +53,11 @@
       "sitio": "https://barriodigitaltepic-ui.github.io/barrio-digital-platform/",
       "imagen": "https://images.unsplash.com/photo-1515377905703-c4788e51af15",
       "direccion": "Tepic, Nayarit",
+
+      
+  "lat": 21.48879521332079,
+  "lng": -104.83196011222735,
+      
       "color": "#D4AF37",
       "badge": "destacado",
       "galeria": [
@@ -70,6 +75,10 @@
       "sitio": "https://ventasrodrigomaldonado-ux.github.io/Torrez-Maldonado-Web/",
       "imagen": "images/torrez1.jpg",
       "direccion": "Tepic, Nayarit",
+
+      "lat": 21.48825152316354,
+"lng": -104.82768182005218,
+      
       "color": "#D4AF37",
       "badge": "premium",
       "destacado": true,
@@ -89,6 +98,10 @@
       "sitio": "https://barriodigitaltepic-ui.github.io/VERONICA-MARY-KAY/",
       "imagen": "images/marykay-veronica.jpg",
       "direccion": "Envíos a todo México",
+      
+       "lat": 21.489725775546916,
+  "lng": -104.82542906470506,
+      
       "color": "#D81B60",
       "badge": "premium",
       "destacado": true,
@@ -108,6 +121,10 @@
   "sitio": "https://onnodo.com",
   "imagen": "images/onnodo-banner.jpg",
   "direccion": "Cobertura nacional",
+
+    "lat": 21.519366037711173,
+  "lng": -104.91537874639062,
+   
   "color": "#00C853",
    "badge": "verificado",
   "galeria": [
