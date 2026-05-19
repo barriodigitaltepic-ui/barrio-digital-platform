@@ -92,7 +92,7 @@ function renderHome(data){
     <section class="hero">
       <div class="hero-content">
         <h1>Barrio Digital Tepic</h1>
-        <p>Tu Directorio Digital de Negocios Locales</p>
+        <p>Negocios, servicios, inmobiliarias y empresas locales en Tepic, Nayarit.</p>
 
         <div class="stats-panel">
           <div>
@@ -204,7 +204,7 @@ function renderHome(data){
         <div>
           <h3 style="font-size:28px;margin-bottom:15px;color:white;">🏙️ Barrio Digital Tepic</h3>
           <p style="font-size:15px;line-height:1.7;opacity:.82;">
-            Directorio digital para negocios, marcas y servicios locales en Tepic.
+            Plataforma digital de negocios, inmobiliarias, GPS, belleza y servicios locales en Tepic, Nayarit.
           </p>
         </div>
 
