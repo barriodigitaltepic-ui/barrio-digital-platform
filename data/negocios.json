@@ -54,6 +54,7 @@
       "imagen": "https://images.unsplash.com/photo-1515377905703-c4788e51af15",
       "direccion": "Tepic, Nayarit",
       "color": "#D4AF37",
+      "badge": "destacado"
       "galeria": [
   "images/spafive-1.jpg",
   "images/spafive-2.jpg",
@@ -70,6 +71,7 @@
       "imagen": "images/torrez1.jpg",
       "direccion": "Tepic, Nayarit",
       "color": "#D4AF37",
+      "badge": "premium",
       "destacado": true,
 
         "galeria": [
@@ -88,6 +90,7 @@
       "imagen": "images/marykay-veronica.jpg",
       "direccion": "Envíos a todo México",
       "color": "#D81B60",
+      "badge": "premium",
       "destacado": true,
 
         "galeria": [
@@ -106,6 +109,7 @@
   "imagen": "images/onnodo-banner.jpg",
   "direccion": "Cobertura nacional",
   "color": "#00C853",
+   "badge": "verificado",
   "galeria": [
   "images/onnodo-1.jpg",
   "images/onnodo-2.jpg",
