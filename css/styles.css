@@ -741,6 +741,38 @@ scale(1.03);
 
 box-shadow:
 0 25px 70px rgba(121,40,202,.45);
+}
+
+/* HERO CTA */
+
+.hero-cta{
+margin-top:30px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero-cta a{
+text-decoration:none;
+}
+
+.hero-cta button{
+padding:18px 42px;
+border:none;
+border-radius:60px;
+background:linear-gradient(135deg,#7928ca,#ff0080);
+color:white;
+font-size:17px;
+font-weight:700;
+letter-spacing:.5px;
+cursor:pointer;
+box-shadow:0 20px 60px rgba(121,40,202,.35);
+transition:.35s;
+}
+
+.hero-cta button:hover{
+transform:translateY(-4px) scale(1.03);
+box-shadow:0 30px 80px rgba(121,40,202,.45);
 }  
 
 }
