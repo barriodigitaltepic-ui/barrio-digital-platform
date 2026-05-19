@@ -128,3 +128,53 @@ to{opacity:1;transform:translateY(0)}
 .galeria-grid img{height:240px}
 .hero-cta button{width:90%;max-width:320px;font-size:16px}
 }
+
+/* MAPA PREMIUM */
+
+.mapa-section{
+padding:80px 8%;
+background:rgba(0,0,0,.45);
+}
+
+.mapa-subtitulo{
+text-align:center;
+max-width:750px;
+margin:0 auto 30px;
+font-size:18px;
+opacity:.85;
+line-height:1.6;
+}
+
+.mapa-filtros{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px;
+margin-bottom:30px;
+}
+
+.mapa-filtros button{
+padding:12px 24px;
+border:none;
+border-radius:40px;
+background:rgba(255,255,255,.10);
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+border:1px solid rgba(255,255,255,.12);
+}
+
+.mapa-filtros button:hover{
+background:#D4AF37;
+color:#111;
+}
+
+#mapaBarrio{
+width:100%;
+height:520px;
+border-radius:30px;
+overflow:hidden;
+box-shadow:0 25px 70px rgba(0,0,0,.55);
+border:1px solid rgba(255,255,255,.12);
+}
