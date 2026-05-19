@@ -426,6 +426,8 @@ function obtenerTextoBadge(tipo){
       return "🆕 NUEVO";
     default:
       return "⭐ NEGOCIO";
+   }
+
   }
 
  let mapaBarrio;
@@ -472,4 +474,3 @@ function filtrarMapa(categoria){
 
   pintarMarcadores(negocios);
 } 
-}
