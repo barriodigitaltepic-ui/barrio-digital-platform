@@ -163,6 +163,28 @@ function renderHome(data){
       </div>
     </section>
   `;
+  html += `
+
+<section class="mapa-section">
+
+  <h2 class="titulo-seccion">Mapa de Negocios Afiliados</h2>
+
+  <p class="mapa-subtitulo">
+    Explora negocios registrados en Barrio Digital Tepic por ubicación y categoría.
+  </p>
+
+  <div class="mapa-filtros">
+    <button onclick="filtrarMapa('todos')">Todos</button>
+    ${data.categorias.map(c => `
+      <button onclick="filtrarMapa('${c.slug}')">${c.nombre}</button>
+    `).join("")}
+  </div>
+
+  <div id="mapaBarrio"></div>
+
+</section>
+
+`;
 
   html += `
     <footer style="margin-top:90px;padding:70px 8% 35px;background:rgba(0,0,0,.88);border-top:1px solid rgba(212,175,55,.25);backdrop-filter:blur(18px);">
@@ -200,6 +222,8 @@ function renderHome(data){
   app.innerHTML = html;
   window.dataGlobal = data;
 }
+
+setTimeout(() => iniciarMapa(data.negocios), 300);
 
 function renderCategoria(categoria, negocios){
   const app = document.getElementById("app");
@@ -403,4 +427,49 @@ function obtenerTextoBadge(tipo){
     default:
       return "⭐ NEGOCIO";
   }
+
+ let mapaBarrio;
+let marcadoresMapa = [];
+
+function iniciarMapa(negocios){
+  const mapaDiv = document.getElementById("mapaBarrio");
+  if(!mapaDiv) return;
+
+  mapaBarrio = L.map("mapaBarrio").setView([21.5042, -104.8946], 12);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "© OpenStreetMap"
+  }).addTo(mapaBarrio);
+
+  pintarMarcadores(negocios);
+}
+
+function pintarMarcadores(negocios){
+  marcadoresMapa.forEach(m => mapaBarrio.removeLayer(m));
+  marcadoresMapa = [];
+
+  negocios
+    .filter(n => n.lat && n.lng)
+    .forEach(n => {
+      const marker = L.marker([n.lat, n.lng]).addTo(mapaBarrio);
+
+      marker.bindPopup(`
+        <strong>${n.nombre}</strong><br>
+        ${n.descripcion}<br><br>
+        <a href="?negocio=${encodeURIComponent(n.nombre)}">Ver perfil</a>
+      `);
+
+      marcadoresMapa.push(marker);
+    });
+}
+
+function filtrarMapa(categoria){
+  if(!window.dataGlobal || !mapaBarrio) return;
+
+  const negocios = categoria === "todos"
+    ? window.dataGlobal.negocios
+    : window.dataGlobal.negocios.filter(n => n.categoria === categoria);
+
+  pintarMarcadores(negocios);
+} 
 }
