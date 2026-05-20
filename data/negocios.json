@@ -134,6 +134,37 @@
         "images/ferreteria-2.jpg",
         "images/ferreteria-3.jpg"
       ]
+
+      {
+  "nombre": "Mariscos Del Capu",
+  "categoria": "restaurantes",
+
+  "descripcion": "Mariscos premium, aguachiles, pulpo enamorado, reservaciones y pedidos digitales con experiencia gastronómica moderna.",
+
+  "whatsapp": "5213113392436",
+
+  "sitio": "https://barriodigitaltepic-ui.github.io/mariscos-del-capu/",
+
+  "imagen": "images/mariscos-del-capu-banner.jpg",
+
+  "direccion": "Tepic, Nayarit",
+
+  "lat": 21.4882,
+  "lng": -104.8276,
+
+  "color": "#00BCD4",
+
+  "badge": "premium",
+
+  "destacado": true,
+
+  "externo": true,
+
+  "galeria": [
+    "images/mariscos-1.jpg",
+    "images/mariscos-2.jpg",
+    "images/mariscos-3.jpg"
+  ]
     }
   ]
 }
