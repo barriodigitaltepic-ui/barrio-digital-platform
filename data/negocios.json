@@ -40,6 +40,11 @@
   "nombre": "GPS y Rastreo",
   "slug": "gps-rastreo",
   "imagen": "images/gps-banner.jpg"
+},
+    {
+  "nombre": "Páginas Demo",
+  "slug": "paginas-demo",
+  "imagen": "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
 }
   ],
 
@@ -131,7 +136,34 @@
   "images/onnodo-1.jpg",
   "images/onnodo-2.jpg",
   "images/onnodo-3.jpg"
-] 
-}
-  ]
-}
+ ] 
+   },
+  {
+  "nombre": "Ferretería Don Capu | Demo",
+  "categoria": "paginas-demo",
+
+  "descripcion": "Ejemplo premium de página web para ferreterías con catálogo, productos ancla, cotización por WhatsApp y diseño profesional.",
+
+  "whatsapp": "5213113392436",
+
+  "sitio": "https://barriodigitaltepic-ui.github.io/ferreteria-demo/",
+
+  "imagen": "images/ferreteria-doncapu-banner.jpg",
+
+  "direccion": "Demo digital | Barrio Digital Tepic",
+
+  "lat": 21.4882,
+  "lng": -104.8276,
+
+  "color": "#D4AF37",
+
+  "badge": "premium",
+
+  "destacado": true,
+
+  "galeria": [
+    "images/ferreteria-1.jpg",
+    "images/ferreteria-2.jpg",
+    "images/ferreteria-3.jpg"
+  ],
+}  
