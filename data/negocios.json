@@ -5,51 +5,43 @@
       "slug": "esteticas",
       "imagen": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f"
     },
-
     {
       "nombre": "Ferreterías",
       "slug": "ferreterias",
       "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356dfd"
     },
-
     {
       "nombre": "Inmobiliarias",
       "slug": "inmobiliarias",
-      "imagen":"https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1400&q=80"
+      "imagen": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1400&q=80"
     },
-
     {
       "nombre": "Uñas",
       "slug": "unas",
       "imagen": "https://images.unsplash.com/photo-1604654894610-df63bc536371"
     },
-
     {
       "nombre": "Restaurantes",
       "slug": "restaurantes",
       "imagen": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
     },
-
     {
       "nombre": "Belleza",
       "slug": "belleza",
       "imagen": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
     },
-
     {
-  "nombre": "GPS y Rastreo",
-  "slug": "gps-rastreo",
-  "imagen": "images/gps-banner.jpg"
-},
+      "nombre": "GPS y Rastreo",
+      "slug": "gps-rastreo",
+      "imagen": "images/gps-banner.jpg"
+    },
     {
-  "nombre": "Páginas Demo",
-  "slug": "paginas-demo",
-  "imagen": "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
-},
-  ]
-
+      "nombre": "Páginas Demo",
+      "slug": "paginas-demo",
+      "imagen": "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+    }
+  ],
   "negocios": [
-
     {
       "nombre": "Spa Five Stars",
       "categoria": "esteticas",
@@ -58,20 +50,16 @@
       "sitio": "https://barriodigitaltepic-ui.github.io/barrio-digital-platform/",
       "imagen": "https://images.unsplash.com/photo-1515377905703-c4788e51af15",
       "direccion": "Tepic, Nayarit",
-
-      
-  "lat": 21.48879521332079,
-  "lng": -104.83196011222735,
-      
+      "lat": 21.48879521332079,
+      "lng": -104.83196011222735,
       "color": "#D4AF37",
       "badge": "destacado",
       "galeria": [
-  "images/spafive-1.jpg",
-  "images/spafive-2.jpg",
-  "images/spafive-3.jpg"
-]
+        "images/spafive-1.jpg",
+        "images/spafive-2.jpg",
+        "images/spafive-3.jpg"
+      ]
     },
-
     {
       "nombre": "Torrez & Maldonado",
       "categoria": "inmobiliarias",
@@ -80,21 +68,17 @@
       "sitio": "https://ventasrodrigomaldonado-ux.github.io/Torrez-Maldonado-Web/",
       "imagen": "images/torrez1.jpg",
       "direccion": "Tepic, Nayarit",
-
       "lat": 21.48825152316354,
-"lng": -104.82768182005218,
-      
+      "lng": -104.82768182005218,
       "color": "#D4AF37",
       "badge": "premium",
       "destacado": true,
-
-        "galeria": [
-    "images/torrezmaldonado-1.jpg",
-    "images/torrezmaldonado-2.jpg",
-    "images/torrezmaldonado-3.jpg"
-  ]
+      "galeria": [
+        "images/torrezmaldonado-1.jpg",
+        "images/torrezmaldonado-2.jpg",
+        "images/torrezmaldonado-3.jpg"
+      ]
     },
-
     {
       "nombre": "Mary Kay | Verónica Torrez",
       "categoria": "belleza",
@@ -103,67 +87,53 @@
       "sitio": "https://barriodigitaltepic-ui.github.io/VERONICA-MARY-KAY/",
       "imagen": "images/marykay-veronica.jpg",
       "direccion": "Envíos a todo México",
-      
-       "lat": 21.489725775546916,
-  "lng": -104.82542906470506,
-      
+      "lat": 21.489725775546916,
+      "lng": -104.82542906470506,
       "color": "#D81B60",
       "badge": "premium",
       "destacado": true,
-
-        "galeria": [
-    "images/marykay-1.jpg",
-    "images/marykay-2.jpg",
-    "images/marykay-3.jpg"
-  ]
+      "galeria": [
+        "images/marykay-1.jpg",
+        "images/marykay-2.jpg",
+        "images/marykay-3.jpg"
+      ]
     },
-    
- {
-  "nombre": "ONNODO GPS",
-  "categoria": "gps-rastreo",
-  "descripcion": "Soluciones de rastreo satelital, monitoreo vehicular, control de flotillas y localización en tiempo real.",
-  "whatsapp": "5213113392436",
-  "sitio": "https://onnodo.com",
-  "imagen": "images/onnodo-banner.jpg",
-  "direccion": "Cobertura nacional",
-
-    "lat": 21.519366037711173,
-  "lng": -104.91537874639062,
-   
-  "color": "#00C853",
-   "badge": "verificado",
-  "galeria": [
-  "images/onnodo-1.jpg",
-  "images/onnodo-2.jpg",
-  "images/onnodo-3.jpg"
- ] 
-   },
-  {
-  "nombre": "Ferretería Don Capu | Demo",
-  "categoria": "paginas-demo",
-
-  "descripcion": "Ejemplo premium de página web para ferreterías con catálogo, productos ancla, cotización por WhatsApp y diseño profesional.",
-
-  "whatsapp": "5213113392436",
-
-  "sitio": "https://barriodigitaltepic-ui.github.io/ferreteria-demo/",
-
-  "imagen": "images/ferreteria-doncapu-banner.jpg",
-
-  "direccion": "Demo digital | Barrio Digital Tepic",
-
-  "lat": 21.4882,
-  "lng": -104.8276,
-
-  "color": "#D4AF37",
-
-  "badge": "premium",
-
-  "destacado": true,
-
-  "galeria": [
-    "images/ferreteria-1.jpg",
-    "images/ferreteria-2.jpg",
-    "images/ferreteria-3.jpg"
+    {
+      "nombre": "ONNODO GPS",
+      "categoria": "gps-rastreo",
+      "descripcion": "Soluciones de rastreo satelital, monitoreo vehicular, control de flotillas y localización en tiempo real.",
+      "whatsapp": "5213113392436",
+      "sitio": "https://onnodo.com",
+      "imagen": "images/onnodo-banner.jpg",
+      "direccion": "Cobertura nacional",
+      "lat": 21.519366037711173,
+      "lng": -104.91537874639062,
+      "color": "#00C853",
+      "badge": "verificado",
+      "galeria": [
+        "images/onnodo-1.jpg",
+        "images/onnodo-2.jpg",
+        "images/onnodo-3.jpg"
+      ]
+    },
+    {
+      "nombre": "Ferretería Don Capu | Demo",
+      "categoria": "paginas-demo",
+      "descripcion": "Ejemplo premium de página web para ferreterías con catálogo, productos ancla, cotización por WhatsApp y diseño profesional.",
+      "whatsapp": "5213113392436",
+      "sitio": "https://barriodigitaltepic-ui.github.io/ferreteria-demo/",
+      "imagen": "images/ferreteria-doncapu-banner.jpg",
+      "direccion": "Demo digital | Barrio Digital Tepic",
+      "lat": 21.4882,
+      "lng": -104.8276,
+      "color": "#D4AF37",
+      "badge": "premium",
+      "destacado": true,
+      "galeria": [
+        "images/ferreteria-1.jpg",
+        "images/ferreteria-2.jpg",
+        "images/ferreteria-3.jpg"
+      ]
+    }
   ]
-},  
+}
