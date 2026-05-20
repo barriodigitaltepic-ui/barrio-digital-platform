@@ -54,7 +54,6 @@
       "lng": -104.83196011222735,
       "color": "#D4AF37",
       "badge": "destacado",
-     "externo": true, 
       "galeria": [
         "images/spafive-1.jpg",
         "images/spafive-2.jpg",
@@ -74,7 +73,6 @@
       "color": "#D4AF37",
       "badge": "premium",
       "destacado": true,
-      "externo": true,
       "galeria": [
         "images/torrezmaldonado-1.jpg",
         "images/torrezmaldonado-2.jpg",
@@ -94,7 +92,6 @@
       "color": "#D81B60",
       "badge": "premium",
       "destacado": true,
-      "externo": true,
       "galeria": [
         "images/marykay-1.jpg",
         "images/marykay-2.jpg",
@@ -113,7 +110,6 @@
       "lng": -104.91537874639062,
       "color": "#00C853",
       "badge": "verificado",
-      "externo": true,
       "galeria": [
         "images/onnodo-1.jpg",
         "images/onnodo-2.jpg",
@@ -133,7 +129,6 @@
       "color": "#D4AF37",
       "badge": "premium",
       "destacado": true,
-      "externo": true,
       "galeria": [
         "images/ferreteria-1.jpg",
         "images/ferreteria-2.jpg",
@@ -143,7 +138,6 @@
     {
   "nombre": "Mariscos Del Capu",
   "categoria": "restaurantes",
-
   "descripcion": "Mariscos premium, aguachiles, pulpo enamorado, reservaciones y pedidos digitales con experiencia gastronómica moderna.",
 
   "whatsapp": "5213113392436",
@@ -162,8 +156,6 @@
   "badge": "premium",
 
   "destacado": true,
-
-  "externo": true,
 
   "galeria": [
     "images/mariscos-1.jpg",
