@@ -45,8 +45,8 @@
   "nombre": "Páginas Demo",
   "slug": "paginas-demo",
   "imagen": "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
-}
-  ],
+},
+  ]
 
   "negocios": [
 
@@ -165,5 +165,5 @@
     "images/ferreteria-1.jpg",
     "images/ferreteria-2.jpg",
     "images/ferreteria-3.jpg"
-  ],
-}  
+  ]
+},  
