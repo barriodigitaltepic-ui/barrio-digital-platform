@@ -35,6 +35,41 @@ background-size:cover;background-position:center;background-attachment:fixed;bac
 
 .grid{padding:50px 7%;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
 
+/* DESTACADOS PREMIUM */
+
+#resultadosBusqueda{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:35px;
+max-width:1400px;
+margin:0 auto;
+}
+
+#resultadosBusqueda .card img{
+height:520px;
+object-fit:cover;
+}
+
+#resultadosBusqueda .card{
+min-height:760px;
+}
+
+@media(max-width:900px){
+
+#resultadosBusqueda{
+grid-template-columns:1fr;
+}
+
+#resultadosBusqueda .card img{
+height:360px;
+}
+
+#resultadosBusqueda .card{
+min-height:auto;
+}
+
+}
+
 .card{background:rgba(18,18,18,.72);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.10);border-radius:28px;overflow:hidden;box-shadow:0 15px 45px rgba(0,0,0,.38);transition:.4s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-10px);box-shadow:0 30px 70px rgba(0,0,0,.55);border:1px solid rgba(212,175,55,.25)}
 .card:hover img{transform:scale(1.03)}
