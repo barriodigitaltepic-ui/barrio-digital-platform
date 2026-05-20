@@ -327,13 +327,7 @@ function cardNegocio(n){
 
       ${n.direccion ? `<p><strong>📍 ${n.direccion}</strong></p>` : ""}
 
-     <a href="${
-  n.externo
-    ? n.sitio
-    : `?negocio=${encodeURIComponent(n.nombre)}`
-}" target="${
-  n.externo ? "_blank" : "_self"
-}">
+   <a href="?negocio=${encodeURIComponent(n.nombre)}">
 
       <a href="https://wa.me/${n.whatsapp}" target="_blank" onclick="registrarClick('whatsapp','${n.nombre}')">
         <button style="background:#25D366;">WhatsApp</button>
