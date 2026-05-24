@@ -166,30 +166,18 @@
 
  {
   "nombre": "SELAH Podología",
-
   "categoria": "belleza",
-
   "descripcion": "Clínica boutique de podología y quiropodia especializada en bienestar, descanso y cuidado profesional de tus pies. Un espacio elegante y humano enfocado en tratamientos preventivos, uñas enterradas, onicomicosis, limpieza profunda, callosidades y atención podológica premium en Tepic, Nayarit.",
-
   "whatsapp": "5213111416509",
-
+  "sitio": "https://www.facebook.com/profile.php?id=100068760135777", 
   "sitio": "https://barriodigitaltepic-ui.github.io/selah-podologia/",
-
   "imagen": "images/selah-podologia-banner-premium.jpg",
-
   "direccion": "Tepic, Nayarit",
-
   "lat": 21.5090,
   "lng": -104.8940,
-
   "color": "#D4AF37",
-
   "badge": "premium",
-
-  "destacado": true,
-
   "externo": true,
-
   "galeria": [
     "images/selah-premium-1.jpg",
     "images/selah-premium-2.jpg",
