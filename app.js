@@ -210,6 +210,14 @@ function renderNegocio(n){
             <button style="background:#25D366;">WhatsApp</button>
           </a>
 
+          ${n.facebook ? `
+<a href="${n.facebook}" target="_blank">
+  <button style="background:#1877F2;">
+    Facebook
+  </button>
+</a>
+` : ""}
+
           <a href="#catalogo-negocio">
             <button style="background:#D4AF37;color:#111;">${botonCatalogo}</button>
           </a>
