@@ -162,6 +162,75 @@
     "images/mariscos-2.jpg",
     "images/mariscos-3.jpg"
       ]
+    },
+
+ {
+  "nombre": "SELAH Podología",
+
+  "categoria": "belleza",
+
+  "descripcion": "Clínica boutique de podología y quiropodia especializada en bienestar, descanso y cuidado profesional de tus pies. Un espacio elegante y humano enfocado en tratamientos preventivos, uñas enterradas, onicomicosis, limpieza profunda, callosidades y atención podológica premium en Tepic, Nayarit.",
+
+  "whatsapp": "5213111416509",
+
+  "sitio": "https://barriodigitaltepic-ui.github.io/selah-podologia/",
+
+  "imagen": "images/selah-podologia-banner-premium.jpg",
+
+  "direccion": "Tepic, Nayarit",
+
+  "lat": 21.5090,
+  "lng": -104.8940,
+
+  "color": "#D4AF37",
+
+  "badge": "premium",
+
+  "destacado": true,
+
+  "externo": true,
+
+  "galeria": [
+    "images/selah-premium-1.jpg",
+    "images/selah-premium-2.jpg",
+    "images/selah-premium-3.jpg",
+    "images/selah-premium-4.jpg",
+    "images/selah-premium-5.jpg"
+  ],
+
+  "servicios": [
+    "Quiropodia profesional",
+    "Tratamiento de uñas enterradas",
+    "Control de onicomicosis",
+    "Limpieza profunda",
+    "Eliminación de callosidades",
+    "Cuidado preventivo para adultos mayores",
+    "Atención podológica estética",
+    "Valoración podológica"
+  ],
+
+  "slogan": "Donde el descanso comienza desde tus pies.",
+
+  "horario": {
+    "lunes-viernes": "9:00 AM - 7:00 PM",
+    "sabado": "9:00 AM - 3:00 PM",
+    "domingo": "Previa cita"
+  },
+
+  "botones": [
+    {
+      "texto": "Agendar cita",
+      "tipo": "whatsapp"
+    },
+    {
+      "texto": "Ver tratamientos",
+      "tipo": "catalogo"
+    },
+    {
+      "texto": "Ubicación",
+      "tipo": "mapa"
     }
+  ]
+}   
   ]
 } 
