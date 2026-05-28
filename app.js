@@ -94,7 +94,7 @@ function renderHome(data){
         <div class="gps-info">
           <h2>📍 Localización Digital Vehicular</h2>
           <p>GPS, rastreo, monitoreo y soluciones digitales para vehículos particulares, negocios y flotillas.</p>
-          <a href="https://wa.me/523113392436" target="_blank">
+          <a href="https://barriodigitaltepic-ui.github.io/inscribete-barrio-digital/" target="_blank">
             <button>Solicitar Información</button>
           </a>
         </div>
