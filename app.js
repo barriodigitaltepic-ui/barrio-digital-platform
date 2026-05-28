@@ -82,7 +82,7 @@ function renderHome(data){
         </div>
 
         <div class="hero-cta">
-          <a href="https://wa.me/523113392436?text=Hola,%20quiero%20anunciar%20mi%20negocio%20en%20Barrio%20Digital" target="_blank">
+          <a href="https://barriodigitaltepic-ui.github.io/inscribete-barrio-digital/" target="_blank">
             <button>🚀 Anuncia tu negocio</button>
           </a>
         </div>
