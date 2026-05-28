@@ -52,7 +52,7 @@ function navbar(){
         <span>|</span>
         <a href="./#gps">GPS</a>
         <span>|</span>
-        <a href="https://wa.me/523113392436" target="_blank">Publicar Negocio</a>
+        <a href="https://barriodigitaltepic-ui.github.io/inscribete-barrio-digital/" target="_blank">Publicar Negocio</a>
       </div>
     </nav>
   `;
@@ -317,7 +317,7 @@ function footer(){
         </div>
         <div>
           <h4 style="font-size:20px;margin-bottom:18px;color:#D4AF37;">Negocios</h4>
-          <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="https://wa.me/523113392436" target="_blank">Publicar mi negocio</a>
+          <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="https://barriodigitaltepic-ui.github.io/inscribete-barrio-digital/" target="_blank">Publicar mi negocio</a>
           <a style="display:block;color:white;text-decoration:none;margin-bottom:12px;" href="./#gps">GPS Vehicular</a>
         </div>
         <div>
