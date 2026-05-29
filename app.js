@@ -116,7 +116,13 @@ function renderHome(data){
       <h2 class="titulo-seccion">Explora Categorías</h2>
       <div class="categorias-grid">
         ${data.categorias.map(c => `
-          <a href="?categoria=${c.slug}" class="categoria-card">
+          <a href="${
+  c.slug === 'inmobiliarias'
+    ? 'https://barriodigitaltepic-ui.github.io/BARRIO-MARKETPLACE-INMOBILIARIO/'
+    : '?categoria=' + c.slug
+}" 
+${c.slug === 'inmobiliarias' ? 'target="_blank"' : ''}
+class="categoria-card">
             <div class="categoria-bg" style="background-image:url('${c.imagen}')"></div>
             <div class="categoria-overlay"></div>
             <div class="categoria-content">
