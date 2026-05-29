@@ -118,7 +118,7 @@ function renderHome(data){
         ${data.categorias.map(c => `
           <a href="${
   c.slug === 'inmobiliarias'
-    ? 'https://barriodigitaltepic-ui.github.io/BARRIO-MARKETPLACE-INMOBILIARIO/'
+    ? 'https://barriodigitaltepic-ui.github.io/MARKET-INMOBILIARIO/'
     : '?categoria=' + c.slug
 }" 
 ${c.slug === 'inmobiliarias' ? 'target="_blank"' : ''}
