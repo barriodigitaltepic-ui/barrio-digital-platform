@@ -5,11 +5,11 @@
       "slug": "esteticas",
       "imagen": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f"
     },
-   {
-  "nombre": "Moda, Estilo y Accesorios",
-  "slug": "moda-accesorios",
-  "imagen": "https://unsplash.com/es/fotos/persona-sosteniendo-gafas-de-sol-con-montura-marron-_hwL-LeytRc"
-   }, 
+  {
+  "nombre":"Moda, Estilo y Accesorios",
+  "slug":"moda-accesorios",
+  "imagen":"https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80"
+},
   {
       "nombre": "Ferreterías",
       "slug": "ferreterias",
@@ -67,11 +67,11 @@
     },
      {
       "nombre": "Adeline - Accesorios",
-      "categoria": "Moda, Estilo y Accesorios",
+      "categoria": "Moda y accesorios",
       "descripcion": "Encuentra el Mejor Detalle para ese dia Especial.",
       "whatsapp": "5213113392436",
       "sitio": "https://barriodigitaltepic-ui.github.io/barrio-digital-platform/",
-      "imagen": "https://unsplash.com/es/fotos/woman-wearing-beige-and-red-floral-top-leaning-on-gray-concrete-slab-with-white-leather-bag-ontop-IwVRO3TLjLc",
+      "imagen": "imagen": "https://images.unsplash.com/photo-1576053139778-7e32f2ae3cfd?q=80&w=1170&auto=format&fit=crop",
       "direccion": "Tepic, Nayarit",
       "lat": 21.48879521332079,
       "lng": -104.83196011222738,
