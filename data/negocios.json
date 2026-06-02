@@ -8,7 +8,7 @@
    {
   "nombre": "Moda, Estilo y Accesorios",
   "slug": "moda-accesorios",
-  "imagen": "img/moda-accesorios.jpg"
+  "imagen": "https://unsplash.com/es/fotos/persona-sosteniendo-gafas-de-sol-con-montura-marron-_hwL-LeytRc"
    }, 
   {
       "nombre": "Ferreterías",
@@ -74,7 +74,7 @@
       "imagen": "https://unsplash.com/es/fotos/woman-wearing-beige-and-red-floral-top-leaning-on-gray-concrete-slab-with-white-leather-bag-ontop-IwVRO3TLjLc",
       "direccion": "Tepic, Nayarit",
       "lat": 21.48879521332079,
-      "lng": -104.83196011222735,
+      "lng": -104.83196011222738,
       "color": "#D4AF37",
       "badge": "destacado",
       "galeria": [
