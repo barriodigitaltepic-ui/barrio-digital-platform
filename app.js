@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  registrarVisita();
 
   const app = document.getElementById("app");
   const params = new URLSearchParams(window.location.search);
@@ -74,7 +73,7 @@ function renderHome(data){
           <div><h2>${data.negocios.length}</h2><p>Negocios asociados</p></div>
           <div><h2>${data.categorias.length}</h2><p>Categorías activas</p></div>
           <div><h2>${destacados.length}</h2><p>Destacados</p></div>
-          <div><h2>${obtenerVisitas()}</h2><p>Visitas locales</p></div>
+         <div><h2>24/7</h2><p>Conectando negocios</p></div>
         </div>
 
         <div class="buscador-box">
@@ -386,21 +385,11 @@ function buscarEnCategoria(){
 
 /* ANALYTICS LOCAL */
 
-function registrarVisita(){
-  let visitas = Number(localStorage.getItem("visitasBarrioDigital")) || 0;
-  visitas++;
-  localStorage.setItem("visitasBarrioDigital", visitas);
-}
-
 function registrarClick(tipo, negocio){
   const key = `click_${tipo}_${negocio}`;
   let clicks = Number(localStorage.getItem(key)) || 0;
   clicks++;
   localStorage.setItem(key, clicks);
-}
-
-function obtenerVisitas(){
-  return Number(localStorage.getItem("visitasBarrioDigital")) || 0;
 }
 
 function obtenerTextoBadge(tipo){
